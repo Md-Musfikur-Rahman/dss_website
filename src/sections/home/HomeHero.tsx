@@ -66,7 +66,6 @@ const StyledGradientText = styled(m.h1)(({ theme }) => ({
 
 const StyledEllipseTop = styled('div')(({ theme }) => ({
   position: 'absolute',
-  width: 480,
   height: 480,
   top: -80,
   right: -80,
