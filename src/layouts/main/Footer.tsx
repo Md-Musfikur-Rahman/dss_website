@@ -15,7 +15,7 @@ import Iconify from '../../components/iconify';
 
 const LINKS = [
   {
-    headline: 'Minimal',
+    headline: 'Devsite Stuudio',
     children: [
       { name: 'About us', href: PATH_PAGE.about },
       { name: 'Contact us', href: PATH_PAGE.contact },
@@ -32,7 +32,7 @@ const LINKS = [
   {
     headline: 'Contact',
     children: [
-      { name: 'support@minimals.cc', href: '#' },
+      { name: 'support@devsitestudio.com', href: '#' },
       { name: 'Los Angeles, 359  Hidden Valley Road', href: '#' },
     ],
   },

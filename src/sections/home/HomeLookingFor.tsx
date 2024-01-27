@@ -5,7 +5,7 @@ import { Box, Button, Container, Typography, Grid, Stack } from '@mui/material';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
 // routes
-import { PATH_ZONE_ON_STORE } from '../../routes/paths';
+import { PATH_PAGE } from '../../routes/paths';
 // components
 import Image from '../../components/image';
 import Iconify from '../../components/iconify';
@@ -105,9 +105,8 @@ const VisitButton = (
     color="inherit"
     size="large"
     variant="outlined"
-    target="_blank"
     rel="noopener"
-    href={PATH_ZONE_ON_STORE}
+    href={PATH_PAGE.comingSoon}
     endIcon={<Iconify icon="ic:round-arrow-right-alt" />}
   >
     Visit Zone Landing Page

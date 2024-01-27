@@ -15,15 +15,13 @@ import {
 } from '@mui/material';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
-// routes
-import { PATH_MINIMAL_ON_STORE } from '../../routes/paths';
 // _mock_
 import { _homePlans } from '../../_mock/arrays';
 // components
 import SvgColor from '../../components/svg-color';
 import Iconify from '../../components/iconify';
 import { varFade, MotionViewport } from '../../components/animate';
-import Link from 'next/link';
+import { PATH_PAGE } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -150,12 +148,21 @@ function Content() {
           </m.div>
 
           <m.div variants={varFade().inUp}>
-            <Link href="/contact-us">
+            <Stack direction="row" spacing={2} alignItems="center" justifyContent="center">
+              <Button
+                color="inherit"
+                size="large"
+                variant="outlined"
+                rel="noopener"
+                href={PATH_PAGE.faqs}
+              >
+                Ask
+              </Button>
               <Button
                 color="inherit"
                 size="large"
                 variant="contained"
-                href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
+                href={PATH_PAGE.contact}
                 sx={{
                   bgcolor: 'text.primary',
                   color: (theme) => (theme.palette.mode === 'light' ? 'common.white' : 'grey.800'),
@@ -166,7 +173,7 @@ function Content() {
               >
                 Contact us
               </Button>
-            </Link>
+            </Stack>
           </m.div>
         </Box>
       </m.div>
@@ -279,7 +286,7 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
           size="small"
           target="_blank"
           rel="noopener"
-          href={PATH_MINIMAL_ON_STORE}
+          href={PATH_PAGE.pricing}
           endIcon={<Iconify icon="eva:chevron-right-fill" />}
         >
           Learn more
