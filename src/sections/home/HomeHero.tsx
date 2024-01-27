@@ -147,7 +147,7 @@ function Description() {
     <StyledDescription>
       <m.div variants={varFade().in}>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Transform wwith
+          Transform with
         </Typography>
       </m.div>
 

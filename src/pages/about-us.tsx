@@ -22,13 +22,13 @@ export default function AboutPage() {
 
       <AboutHero />
 
-      <AboutWhat />
+      {/* <AboutWhat /> */}
 
-      <AboutVision />
+      <AboutTeam />
 
       <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
 
-      <AboutTeam />
+      <AboutVision />
 
       <AboutTestimonials />
     </>

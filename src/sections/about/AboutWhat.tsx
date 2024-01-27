@@ -12,6 +12,7 @@ import { _skills } from '../../_mock/arrays';
 import Image from '../../components/image';
 import Iconify from '../../components/iconify';
 import { MotionViewport, varFade } from '../../components/animate';
+import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
@@ -95,23 +96,25 @@ export default function AboutWhat() {
               </Typography>
             </m.div>
 
-            {/* <Box sx={{ my: 5 }}>
+            <Box sx={{ my: 5 }}>
               {_skills.map((progress) => (
                 <m.div key={progress.label} variants={varFade().inRight}>
                   <ProgressItem progress={progress} />
                 </m.div>
               ))}
-            </Box> */}
+            </Box>
 
             <m.div variants={varFade().inRight}>
-              <Button
-                variant="outlined"
-                color="inherit"
-                size="large"
-                endIcon={<Iconify icon="ic:round-arrow-right-alt" width={24} />}
-              >
-                Check out our work
-              </Button>
+              <Link href="/about-us">
+                <Button
+                  variant="outlined"
+                  color="inherit"
+                  size="large"
+                  endIcon={<Iconify icon="ic:round-arrow-right-alt" width={24} />}
+                >
+                  Check out our Team
+                </Button>
+              </Link>
             </m.div>
           </Grid>
         </Grid>

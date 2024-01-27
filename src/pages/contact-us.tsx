@@ -35,7 +35,7 @@ export default function ContactPage() {
         >
           <ContactForm />
 
-          <ContactMap contacts={_mapContact} />
+          {/* <ContactMap contacts={_mapContact} /> */}
         </Box>
       </Container>
     </>

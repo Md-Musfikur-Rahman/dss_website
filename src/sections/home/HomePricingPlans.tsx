@@ -23,6 +23,7 @@ import { _homePlans } from '../../_mock/arrays';
 import SvgColor from '../../components/svg-color';
 import Iconify from '../../components/iconify';
 import { varFade, MotionViewport } from '../../components/animate';
+import Link from 'next/link';
 
 // ----------------------------------------------------------------------
 
@@ -149,21 +150,23 @@ function Content() {
           </m.div>
 
           <m.div variants={varFade().inUp}>
-            <Button
-              color="inherit"
-              size="large"
-              variant="contained"
-              href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
-              sx={{
-                bgcolor: 'text.primary',
-                color: (theme) => (theme.palette.mode === 'light' ? 'common.white' : 'grey.800'),
-                '&:hover': {
+            <Link href="/contact-us">
+              <Button
+                color="inherit"
+                size="large"
+                variant="contained"
+                href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
+                sx={{
                   bgcolor: 'text.primary',
-                },
-              }}
-            >
-              Contact us
-            </Button>
+                  color: (theme) => (theme.palette.mode === 'light' ? 'common.white' : 'grey.800'),
+                  '&:hover': {
+                    bgcolor: 'text.primary',
+                  },
+                }}
+              >
+                Contact us
+              </Button>
+            </Link>
           </m.div>
         </Box>
       </m.div>

@@ -20,6 +20,8 @@ import {
 } from '../sections/home';
 
 import { About, AboutTestimonials } from '../sections/about';
+import ModeOptions from 'src/components/settings/drawer/ModeOptions';
+import Block from 'src/components/settings/drawer/Block';
 
 // ----------------------------------------------------------------------
 
