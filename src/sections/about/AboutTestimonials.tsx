@@ -1,11 +1,11 @@
 import { m } from 'framer-motion';
 // @mui
 import { alpha, styled, useTheme } from '@mui/material/styles';
-import { Box, Grid, Link, Paper, Rating, Container, BoxProps, Typography } from '@mui/material';
+import { Box, Grid, Link, Paper, Rating, Container, Typography } from '@mui/material';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
 // utils
-import { filterStyles, bgBlur, bgGradient } from '../../utils/cssStyles';
+import { bgBlur, bgGradient } from '../../utils/cssStyles';
 import { fDate } from '../../utils/formatTime';
 // components
 import Iconify from '../../components/iconify';
@@ -61,44 +61,9 @@ const StyledRoot = styled('div')(({ theme }) => ({
   padding: theme.spacing(10, 0),
   [theme.breakpoints.up('md')]: {
     padding: 0,
+    height: 840,
     textAlign: 'left',
     overflow: 'hidden',
-  },
-  position: 'relative',
-  '&:before': {
-    height: 2,
-    bottom: -1,
-    zIndex: 11,
-    content: '""',
-    width: '100%',
-    position: 'absolute',
-  },
-}));
-
-const StyledWrap = styled('div')(({ theme }) => ({
-  overflow: 'hidden',
-  position: 'relative',
-  backgroundColor: alpha(theme.palette.grey[500], 0.08),
-}));
-
-const StyledDescription = styled('div')(({ theme }) => ({
-  top: 0,
-  left: 0,
-  zIndex: 8,
-  width: '100%',
-  height: '100%',
-  textAlign: 'center',
-  position: 'absolute',
-  paddingTop: theme.spacing(10),
-  ...bgGradient({
-    startColor: `${theme.palette.background.default} 25%`,
-    endColor: alpha(theme.palette.background.default, 0),
-  }),
-  [theme.breakpoints.up('md')]: {
-    background: 'unset',
-    position: 'unset',
-    textAlign: 'left',
-    padding: theme.spacing(25, 0),
   },
 }));
 
@@ -109,95 +74,89 @@ export default function AboutTestimonials() {
 
   return (
     <StyledRoot>
-      <StyledWrap>
-        <Container component={MotionViewport} sx={{ position: 'relative' }}>
-          <Grid
-            container
-            spacing={3}
-            alignItems="center"
-            justifyContent={{ xs: 'center', md: 'space-between' }}
-            sx={{ height: 1 }}
-          >
-            <Grid item xs={10} md={4}>
-              <StyledDescription>
-                <Box sx={{ maxWidth: { md: 360 } }}>
-                  <m.div variants={varFade().inUp}>
-                    <Typography
-                      component="p"
-                      variant="overline"
-                      sx={{ mb: 2, color: 'text.secondary' }}
-                    >
-                      Testimonials
-                    </Typography>
-                  </m.div>
+      <Container component={MotionViewport} sx={{ position: 'relative', height: 1 }}>
+        <Grid
+          container
+          spacing={3}
+          alignItems="center"
+          justifyContent={{ xs: 'center', md: 'space-between' }}
+          sx={{ height: 1 }}
+        >
+          <Grid item xs={10} md={4}>
+            <Box sx={{ maxWidth: { md: 360 } }}>
+              <m.div variants={varFade().inUp}>
+                <Typography
+                  component="p"
+                  variant="overline"
+                  sx={{ mb: 2, color: 'text.secondary' }}
+                >
+                  Testimonials
+                </Typography>
+              </m.div>
 
-                  <m.div variants={varFade().inUp}>
-                    <Typography variant="h2" sx={{ mb: 3, color: 'common.white' }}>
-                      Who love <br />
-                      my work
-                    </Typography>
-                  </m.div>
+              <m.div variants={varFade().inUp}>
+                <Typography variant="h2" sx={{ mb: 3, color: 'common.white' }}>
+                  Who love <br />
+                  my work
+                </Typography>
+              </m.div>
 
-                  <m.div variants={varFade().inUp}>
-                    <Typography sx={{ color: 'common.white' }}>
-                      Our goal is to create a product and service that you’re satisfied with and use
-                      it every day. This is why we’re constantly working on our services to make it
-                      better every day and really listen to what our users has to say.
-                    </Typography>
-                  </m.div>
+              <m.div variants={varFade().inUp}>
+                <Typography sx={{ color: 'common.white' }}>
+                  Our goal is to create a product and service that you’re satisfied with and use it
+                  every day. This is why we’re constantly working on our services to make it better
+                  every day and really listen to what our users has to say.
+                </Typography>
+              </m.div>
 
-                  {!isDesktop && (
-                    <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
-                      <m.div variants={varFade().inUp}>
-                        <TestimonialLink />
-                      </m.div>
-                    </Box>
-                  )}
+              {!isDesktop && (
+                <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
+                  <m.div variants={varFade().inUp}>
+                    <TestimonialLink />
+                  </m.div>
                 </Box>
-              </StyledDescription>
-            </Grid>
+              )}
+            </Box>
+          </Grid>
 
-            <Grid
-              item
-              xs={12}
-              md={7}
-              lg={6}
-              sx={{
-                right: { md: 24 },
-                position: { md: 'absolute' },
-              }}
-            >
-              <Grid container spacing={isDesktop ? 3 : 0} alignItems="center">
-                <Grid item xs={12} md={6}>
-                  {TESTIMONIALS.slice(0, 3).map((testimonial) => (
-                    <m.div key={testimonial.name} variants={varFade().inUp}>
-                      <TestimonialCard testimonial={testimonial} />
-                    </m.div>
-                  ))}
-                </Grid>
+          <Grid
+            item
+            xs={12}
+            md={7}
+            lg={6}
+            sx={{
+              right: { md: 24 },
+              position: { md: 'absolute' },
+            }}
+          >
+            <Grid container spacing={isDesktop ? 3 : 0} alignItems="center">
+              <Grid item xs={12} md={6}>
+                {TESTIMONIALS.slice(0, 3).map((testimonial) => (
+                  <m.div key={testimonial.name} variants={varFade().inUp}>
+                    <TestimonialCard testimonial={testimonial} />
+                  </m.div>
+                ))}
+              </Grid>
 
-                <Grid item xs={12} md={6}>
-                  {TESTIMONIALS.slice(3, 6).map((testimonial) => (
-                    <m.div key={testimonial.name} variants={varFade().inUp}>
-                      <TestimonialCard testimonial={testimonial} />
-                    </m.div>
-                  ))}
-                </Grid>
+              <Grid item xs={12} md={6}>
+                {TESTIMONIALS.slice(3, 6).map((testimonial) => (
+                  <m.div key={testimonial.name} variants={varFade().inUp}>
+                    <TestimonialCard testimonial={testimonial} />
+                  </m.div>
+                ))}
               </Grid>
             </Grid>
           </Grid>
+        </Grid>
 
-          {isDesktop && (
-            <Box sx={{ bottom: 60, position: 'absolute' }}>
-              <m.div variants={varFade().inLeft}>
-                <TestimonialLink />
-              </m.div>
-            </Box>
-          )}
-        </Container>
-        <TriangleShape />
-        <TriangleShape anchor="bottom" />
-      </StyledWrap>
+        {isDesktop && (
+          <Box sx={{ bottom: 60, position: 'absolute' }}>
+            <m.div variants={varFade().inLeft}>
+              <TestimonialLink />
+            </m.div>
+          </Box>
+        )}
+      </Container>
     </StyledRoot>
   );
 }
@@ -255,49 +214,5 @@ function TestimonialLink() {
       Read more testimonials
       <Iconify icon="ic:round-arrow-right-alt" sx={{ ml: 1 }} />
     </Link>
-  );
-}
-
-// ----------------------------------------------------------------------
-
-interface TriangleShapeProps extends BoxProps {
-  anchor?: 'top' | 'bottom';
-}
-
-function TriangleShape({ anchor = 'top', ...other }: TriangleShapeProps) {
-  const theme = useTheme();
-
-  const isLight = theme.palette.mode === 'light';
-
-  return (
-    <Box
-      sx={{
-        top: 0,
-        left: 0,
-        width: 1,
-        position: 'absolute',
-        color: 'background.default',
-        zIndex: { xs: 0, md: 9 },
-        height: { xs: 40, md: 64 },
-        ...filterStyles(
-          `drop-shadow(320px 20px 80px ${
-            isLight ? alpha(theme.palette.grey[700], 0.4) : theme.palette.common.black
-          })`
-        ),
-        ...(anchor === 'bottom' && {
-          zIndex: 9,
-          bottom: 0,
-          top: 'unset',
-          color: 'grey.900',
-          transform: 'scale(-1)',
-          ...filterStyles('none'),
-        }),
-      }}
-      {...other}
-    >
-      <svg width="100%" height="100%" viewBox="0 0 1440 64" preserveAspectRatio="none">
-        <path d="M1440 0H0L1440 64V0Z" fill="currentColor" />
-      </svg>
-    </Box>
   );
 }
