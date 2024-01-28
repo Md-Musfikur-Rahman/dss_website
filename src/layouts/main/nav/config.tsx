@@ -14,12 +14,12 @@ const navConfig = [
     path: '/',
   },
   {
-    title: 'Components',
+    title: 'About',
     icon: <Iconify icon="ic:round-grain" />,
-    path: PATH_PAGE.components,
+    path: PATH_PAGE.about,
   },
   {
-    title: 'Pages',
+    title: 'Templates',
     path: '/pages',
     icon: <Iconify icon="eva:file-fill" />,
     children: [
@@ -59,9 +59,9 @@ const navConfig = [
     ],
   },
   {
-    title: 'Documentation',
+    title: 'Contacts',
     icon: <Iconify icon="eva:book-open-fill" />,
-    path: PATH_DOCS.root,
+    path: PATH_PAGE.contact,
   },
 ];
 

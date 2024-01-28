@@ -61,7 +61,7 @@ export default function ComingSoonPage() {
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
-              <Button variant="contained" size="large">
+              <Button variant="contained" size="large" href="/">
                 Notify Me
               </Button>
             </InputAdornment>
@@ -75,6 +75,8 @@ export default function ComingSoonPage() {
         {_socials.map((social) => (
           <IconButton
             key={social.name}
+            href={social.path}
+            target="blank"
             sx={{
               color: social.color,
               '&:hover': {

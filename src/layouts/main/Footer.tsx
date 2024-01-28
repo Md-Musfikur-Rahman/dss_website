@@ -112,7 +112,7 @@ export default function Footer() {
               }}
             >
               {_socials.map((social) => (
-                <IconButton key={social.name}>
+                <IconButton key={social.name} href={social.path}>
                   <Iconify icon={social.icon} />
                 </IconButton>
               ))}

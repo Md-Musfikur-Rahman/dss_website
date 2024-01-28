@@ -9,10 +9,9 @@ import { bgBlur } from '../../utils/cssStyles';
 // config
 import { HEADER } from '../../config';
 // routes
-import { PATH_DOCS, PATH_MINIMAL_ON_STORE } from '../../routes/paths';
+import { PATH_DOCS, PATH_PAGE } from '../../routes/paths';
 // components
 import Logo from '../../components/logo';
-import Label from '../../components/label';
 //
 import NavMobile from './nav/mobile';
 import navConfig from './nav/config';
@@ -59,8 +58,8 @@ export default function Header() {
 
           {isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
 
-          <Button variant="contained" target="_blank" rel="noopener" href={PATH_MINIMAL_ON_STORE}>
-            Purchase Now
+          <Button variant="contained" rel="noopener" href={PATH_PAGE.pricing}>
+            Pricing
           </Button>
 
           {!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
