@@ -38,6 +38,7 @@
     "@mui/x-date-pickers": "^5.0.4",
     "@react-pdf/renderer": "^3.0.0",
     "@reduxjs/toolkit": "^1.8.6",
+    "@vercel/analytics": "^1.1.2",
     "@vercel/speed-insights": "^1.0.8",
     "amazon-cognito-identity-js": "^5.2.11",
     "apexcharts": "^3.36.0",

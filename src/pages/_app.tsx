@@ -22,6 +22,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // ----------------------------------------------------------------------
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
 // next
@@ -47,14 +48,6 @@ import ProgressBar from '../components/progress-bar';
 import SnackbarProvider from '../components/snackbar';
 import { MotionLazyContainer } from '../components/animate';
 import { ThemeSettings, SettingsProvider } from '../components/settings';
-
-// Check our docs
-// https://docs.minimals.cc/authentication/ts-version
-
-// import { AuthProvider } from '../auth/JwtContext';
-// import { AuthProvider } from '../auth/Auth0Context';
-// import { AuthProvider } from '../auth/FirebaseContext';
-// import { AuthProvider } from '../auth/AwsCognitoContext';
 
 // ----------------------------------------------------------------------
 
@@ -92,6 +85,7 @@ export default function MyApp(props: MyAppProps) {
                       <ProgressBar />
                       {getLayout(<Component {...pageProps} />)}
                       <SpeedInsights />
+                      <Analytics />
                     </SnackbarProvider>
                   </ThemeLocalization>
                 </ThemeSettings>
