@@ -21,6 +21,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // ----------------------------------------------------------------------
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
 // next
@@ -90,6 +91,7 @@ export default function MyApp(props: MyAppProps) {
                       <StyledChart />
                       <ProgressBar />
                       {getLayout(<Component {...pageProps} />)}
+                      <SpeedInsights />
                     </SnackbarProvider>
                   </ThemeLocalization>
                 </ThemeSettings>
