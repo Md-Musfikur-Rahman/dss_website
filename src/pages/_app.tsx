@@ -23,6 +23,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 // ----------------------------------------------------------------------
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
 // next
@@ -85,7 +86,7 @@ export default function MyApp(props: MyAppProps) {
                       <ProgressBar />
                       {getLayout(<Component {...pageProps} />)}
                       <SpeedInsights />
-                      <Analytics />
+                      <GoogleAnalytics gaId="G-1VSQCZ0XNM" />
                     </SnackbarProvider>
                   </ThemeLocalization>
                 </ThemeSettings>
