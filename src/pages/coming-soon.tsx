@@ -27,7 +27,7 @@ export default function ComingSoonPage() {
   return (
     <>
       <Head>
-        <title> Coming Soon | Minimal UI</title>
+        <title> Coming Soon | Devsite Studio</title>
       </Head>
 
       <Typography variant="h3" paragraph>

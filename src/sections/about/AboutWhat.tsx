@@ -6,8 +6,6 @@ import { Box, Grid, Button, Container, Typography, LinearProgress } from '@mui/m
 import useResponsive from '../../hooks/useResponsive';
 // utils
 import { fPercent } from '../../utils/formatNumber';
-// _mock_
-import { _skills } from '../../_mock/arrays';
 // components
 import Image from '../../components/image';
 import Iconify from '../../components/iconify';
@@ -153,3 +151,15 @@ function ProgressItem({ progress }: ProgressItemProps) {
     </Box>
   );
 }
+
+const _skills = [
+  {
+    label: 'Development',
+    value: 95.5,
+  },
+  {
+    label: 'Design',
+    value: 90,
+  },
+  { label: 'Marketing', value: 60 },
+];

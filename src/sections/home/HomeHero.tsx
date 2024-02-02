@@ -6,7 +6,7 @@ import NextLink from 'next/link';
 import { styled, alpha, useTheme } from '@mui/material/styles';
 import { Button, Box, Link, Container, Typography, Stack, Grid } from '@mui/material';
 // routes
-import { PATH_DASHBOARD, PATH_FIGMA_PREVIEW, PATH_FREE_VERSION } from '../../routes/paths';
+import { PATH_DASHBOARD, PATH_PAGE } from '../../routes/paths';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
 // utils
@@ -197,11 +197,11 @@ function Description() {
               variant="caption"
               target="_blank"
               rel="noopener"
-              href={PATH_FREE_VERSION}
+              href={PATH_PAGE.comingSoon}
               sx={{ textDecoration: 'underline', display: 'inline-flex', alignItems: 'center' }}
             >
               <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
-              See Our Projects
+              Check Our Templates
             </Link>
           </Stack>
 
@@ -212,7 +212,7 @@ function Description() {
             startIcon={<Iconify icon="eva:external-link-fill" width={24} />}
             target="_blank"
             rel="noopener"
-            href={PATH_FIGMA_PREVIEW}
+            href={PATH_PAGE.about}
             sx={{ borderColor: 'text.primary' }}
           >
             Learn More
