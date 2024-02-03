@@ -32,6 +32,8 @@ export const PATH_PAGE = {
   page404: '/404',
   page500: '/500',
   components: '/components',
+  career: '/career',
+  calendly: '/calendly',
 };
 
 export const PATH_DASHBOARD = {

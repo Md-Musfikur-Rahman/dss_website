@@ -174,7 +174,7 @@ function Description() {
       <m.div variants={varFade().in}>
         <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 5 }}>
           <Stack alignItems="center" spacing={2}>
-            <NextLink href={PATH_DASHBOARD.root} passHref>
+            <NextLink href={PATH_PAGE.calendly} passHref>
               <Button
                 color="inherit"
                 size="large"

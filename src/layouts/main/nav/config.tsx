@@ -45,9 +45,9 @@ const navConfig = [
     ],
   },
   {
-    title: 'Contacts',
+    title: 'Career',
     icon: <Iconify icon="eva:book-open-fill" />,
-    path: PATH_PAGE.contact,
+    path: PATH_PAGE.career,
   },
 ];
 
