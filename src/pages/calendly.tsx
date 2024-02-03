@@ -1,4 +1,9 @@
+import Head from 'next/head';
 import React, { useEffect } from 'react';
+import MainLayout from '../layouts/main';
+import { MeetingHero } from '../sections/meeting';
+
+Calendly.getLayout = (page: React.ReactElement) => <MainLayout>{page}</MainLayout>;
 
 export default function Calendly() {
   useEffect(() => {
@@ -14,10 +19,16 @@ export default function Calendly() {
   }, []);
 
   return (
-    <div
-      className="calendly-inline-widget"
-      data-url="https://calendly.com/devsitestudio/client-meeting"
-      style={{ minWidth: 320, height: 700 }}
-    />
+    <>
+      <Head>
+        <title> Get started | Devsite Studio</title>
+      </Head>
+      <MeetingHero />
+      <div
+        className="calendly-inline-widget"
+        data-url="https://calendly.com/devsitestudio/client-meeting"
+        style={{ minWidth: 320, height: 700 }}
+      />
+    </>
   );
 }

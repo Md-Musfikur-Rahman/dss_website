@@ -160,7 +160,7 @@ function Description() {
             repeat: Infinity,
           }}
         >
-          Dev Site Studio
+          Devsite Studio
         </StyledGradientText>
       </m.div>
 

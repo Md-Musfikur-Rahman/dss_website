@@ -1,7 +1,7 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled, alpha } from '@mui/material/styles';
-import { Container, InputAdornment, Stack, TextField } from '@mui/material';
+import { Container, InputAdornment, Stack, TextField, Typography } from '@mui/material';
 // components
 import Iconify from '../../components/iconify';
 import { MotionContainer, TextAnimate, varFade } from '../../components/animate';
@@ -48,37 +48,18 @@ export default function FaqsHero() {
             </Stack>
           </div>
 
-          <m.div variants={varFade().inUp}>
-            <TextField
-              placeholder="Search support..."
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <Iconify icon="eva:search-fill" sx={{ color: 'text.disabled' }} />
-                  </InputAdornment>
-                ),
-              }}
+          <m.div variants={varFade().inRight}>
+            <Typography
+              variant="h4"
               sx={{
                 mt: 5,
-                '& fieldset': { display: 'none' },
-                '& .MuiOutlinedInput-root': {
-                  width: 280,
-                  color: 'common.white',
-                  typography: 'subtitle1',
-                  border: (theme) => `solid 1px ${alpha(theme.palette.common.white, 0.24)}`,
-                  transition: (theme) =>
-                    theme.transitions.create(['box-shadow', 'width', 'background-color'], {
-                      duration: theme.transitions.duration.shorter,
-                    }),
-                  '&.Mui-focused': {
-                    color: 'grey.800',
-                    bgcolor: 'common.white',
-                    width: { sm: 320 },
-                    boxShadow: (theme) => theme.customShadows.z20,
-                  },
-                },
+                color: 'common.white',
+                fontWeight: 'fontWeightMedium',
               }}
-            />
+            >
+              Empowering Solutions Begin with Conversation
+              <br /> Let's Work Together for Your Support
+            </Typography>
           </m.div>
         </StyledContent>
       </Container>

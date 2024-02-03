@@ -33,7 +33,7 @@ export default function AboutPage() {
 
       <AboutTeam />
 
-      <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
+      <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 20 }} />
 
       <AboutVision />
 

@@ -48,7 +48,7 @@ export default function AboutTeam() {
 
       <TeamMember />
 
-      <Button
+      {/* <Button
         variant="outlined"
         color="inherit"
         size="large"
@@ -56,7 +56,7 @@ export default function AboutTeam() {
         sx={{ mx: 'auto' }}
       >
         View all team members
-      </Button>
+      </Button> */}
     </Container>
   );
 }

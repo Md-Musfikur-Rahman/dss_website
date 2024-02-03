@@ -23,7 +23,7 @@ export default function FaqsPage() {
       <FaqsHero />
 
       <Container sx={{ pt: 15, pb: 10, position: 'relative' }}>
-        <FaqsCategory />
+        {/* <FaqsCategory /> */}
 
         <Typography variant="h3" sx={{ mb: 5 }}>
           Frequently asked questions

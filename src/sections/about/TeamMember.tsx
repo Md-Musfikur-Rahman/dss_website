@@ -1,6 +1,5 @@
 import { Card, Typography, Stack, IconButton, alpha, Box } from '@mui/material';
 import Image from '../../components/image';
-import { _carouselsMembers, _socials } from 'src/_mock/arrays';
 import Iconify from 'src/components/iconify';
 import { m } from 'framer-motion';
 import { varFade } from 'src/components/animate';
@@ -83,7 +82,7 @@ export default function TeamMember() {
                 </Box>
 
                 <Stack direction="row" alignItems="center" justifyContent="center" sx={{ p: 2 }}>
-                  {_socials.map((social) => (
+                  {member._socials.map((social) => (
                     <IconButton
                       key={social.name}
                       sx={{
@@ -105,3 +104,188 @@ export default function TeamMember() {
     </Box>
   );
 }
+
+//----------------------------------------------------------
+
+const _carouselsMembers = [
+  {
+    id: '001',
+    name: 'Miraz Uddin',
+    role: 'Wev Developer',
+    avatar: `/assets/images/portraits/miraz.jpg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/mdmusfikurrahman',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+  {
+    id: '002',
+    name: 'Md Asaduzzaman',
+    role: 'Wev Developer',
+    avatar: `/assets/images/portraits/asad.jpg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/devsitestudio',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/devsitestudio',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/company/devsitestudio',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+  {
+    id: '003',
+    name: 'Shakil',
+    role: 'Full Stack Developer',
+    avatar: `/assets/images/portraits/user.jpg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/mdmusfikurrahman',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+  {
+    id: '004',
+    name: 'xxx',
+    role: 'Senior Wordpress Weveloper',
+    avatar: `/assets/images/portraits/user.jpg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/mdmusfikurrahman',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+  {
+    id: '005',
+    name: 'Md Asaduzzaman',
+    role: 'Front-End Expert',
+    avatar: `/assets/images/portraits/user.jpg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/devsitestudio',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/devsitestudio',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/company/devsitestudio',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+];
