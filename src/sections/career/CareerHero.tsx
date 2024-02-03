@@ -1,7 +1,7 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Stack, Container, Typography, Grid } from '@mui/material';
+import { Stack, Container, Typography, Grid, useMediaQuery, useTheme } from '@mui/material';
 //
 import { TextAnimate, MotionContainer, varFade } from '../../components/animate';
 
@@ -42,7 +42,7 @@ const JobPositions = [
     applyLink: '/apply/graphic-designer',
   },
   {
-    title: 'Customer Support Specialist',
+    title: 'Customer Support',
     location: 'Remote',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
     requirements: [
@@ -58,7 +58,7 @@ const StyledRoot = styled('div')(({ theme }) => ({
   position: 'relative',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  backgroundImage: 'url(/assets/background/overlay_1.svg), url(/assets/images/contact/hero.jpg)',
+  backgroundImage: 'url(/assets/background/overlay_1.svg), url(/assets/images/career/hero.jpg)',
   padding: theme.spacing(10, 0),
   [theme.breakpoints.up('md')]: {
     height: 560,
@@ -78,6 +78,9 @@ const StyledContent = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function CareerHero() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <StyledRoot>
       <Container component={MotionContainer}>
@@ -96,7 +99,12 @@ export default function CareerHero() {
           </Stack>
           <br />
 
-          <Stack spacing={2} display="inline-flex" direction="row" sx={{ color: 'common.white' }}>
+          <Stack
+            spacing={2}
+            display="inline-flex"
+            direction={isSmallScreen ? 'column' : 'row'}
+            sx={{ color: 'common.white' }}
+          >
             <TextAnimate text="Career " />
             <TextAnimate text="Opportunities" />
           </Stack>
@@ -123,10 +131,7 @@ export default function CareerHero() {
                 </m.div>
 
                 <m.div variants={varFade().inRight}>
-                  <Typography variant="body2">
-                    {contact.location}
-                    <br /> {contact.description}
-                  </Typography>
+                  <Typography variant="body2">{contact.location}</Typography>
                 </m.div>
               </Grid>
             ))}
