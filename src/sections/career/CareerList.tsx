@@ -11,8 +11,6 @@ import {
   Divider,
   Button,
 } from '@mui/material';
-// _mock_
-import { _faqs } from '../../_mock/arrays';
 // components
 import Iconify from '../../components/iconify';
 import SendIcon from '@mui/icons-material/Send';
@@ -90,8 +88,8 @@ export default function CareerList() {
             <Divider />
             <List>
               {job.requirements.map((requirement, index) => (
-                <ListItem disablePadding>
-                  <ListItemButton key={index}>
+                <ListItem disablePadding key={index}>
+                  <ListItemButton>
                     <ListItemText primary={requirement} />
                   </ListItemButton>
                 </ListItem>
