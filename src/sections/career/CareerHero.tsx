@@ -1,58 +1,10 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Stack, Container, Typography, Grid, useMediaQuery, useTheme } from '@mui/material';
-//
+import { Stack, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { TextAnimate, MotionContainer, varFade } from '../../components/animate';
 
 // ----------------------------------------------------------------------
-
-const JobPositions = [
-  {
-    title: 'Software Engineer',
-    location: 'Remote',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    requirements: [
-      "Bachelor's degree in Computer Science or related field",
-      'Proficiency in JavaScript, HTML, and CSS',
-      'Experience with React.js and Node.js',
-    ],
-    applyLink: '/apply/software-engineer',
-  },
-  {
-    title: 'Marketing Manager',
-    location: 'Remote',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    requirements: [
-      "Bachelor's degree in Marketing or related field",
-      'Experience in digital marketing strategies',
-      'Excellent communication skills',
-    ],
-    applyLink: '/apply/marketing-manager',
-  },
-  {
-    title: 'Graphic Designer',
-    location: 'Remote',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    requirements: [
-      "Bachelor's degree in Graphic Design or related field",
-      'Proficiency in Adobe Creative Suite',
-      'Strong portfolio of design work',
-    ],
-    applyLink: '/apply/graphic-designer',
-  },
-  {
-    title: 'Customer Support',
-    location: 'Remote',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-    requirements: [
-      'High school diploma or equivalent',
-      'Experience in customer service',
-      'Excellent communication and problem-solving skills',
-    ],
-    applyLink: '/apply/customer-support-specialist',
-  },
-];
 
 const StyledRoot = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -85,7 +37,7 @@ export default function CareerHero() {
     <StyledRoot>
       <Container component={MotionContainer}>
         <StyledContent>
-          <Stack spacing={2} direction="row">
+          <Stack spacing={2} display="inline-flex" direction={isSmallScreen ? 'column' : 'row'}>
             <TextAnimate
               text="Explore"
               sx={{ color: 'primary.main' }}
@@ -96,46 +48,24 @@ export default function CareerHero() {
               sx={{ color: 'primary.main' }}
               variants={varFade().inRight}
             />
-          </Stack>
-          <br />
 
-          <Stack
-            spacing={2}
-            display="inline-flex"
-            direction={isSmallScreen ? 'column' : 'row'}
-            sx={{ color: 'common.white' }}
-          >
-            <TextAnimate text="Career " />
-            <TextAnimate text="Opportunities" />
+            <TextAnimate text="Career" sx={{ color: 'common.white' }} />
+            <TextAnimate text="Opportunities" sx={{ color: 'common.white' }} />
           </Stack>
 
-          <Grid container spacing={5} sx={{ mt: 5, color: 'common.white' }}>
-            {JobPositions.map((contact) => (
-              <Grid
-                key={contact.title}
-                item
-                xs={12}
-                sm={6}
-                md={3}
-                lg={2}
-                sx={{
-                  pr: {
-                    md: 5,
-                  },
-                }}
-              >
-                <m.div variants={varFade().in}>
-                  <Typography variant="h6" paragraph>
-                    {contact.title}
-                  </Typography>
-                </m.div>
-
-                <m.div variants={varFade().inRight}>
-                  <Typography variant="body2">{contact.location}</Typography>
-                </m.div>
-              </Grid>
-            ))}
-          </Grid>
+          <m.div variants={varFade().inRight}>
+            <Typography
+              variant="h4"
+              sx={{
+                mt: 5,
+                color: 'common.white',
+                fontWeight: 'fontWeightMedium',
+              }}
+            >
+              Join us as the trusted expert for <br />
+              Top brands, venues, and entertainers.
+            </Typography>
+          </m.div>
         </StyledContent>
       </Container>
     </StyledRoot>

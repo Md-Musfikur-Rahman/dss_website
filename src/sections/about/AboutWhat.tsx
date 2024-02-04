@@ -43,11 +43,12 @@ export default function AboutWhat() {
         <Grid container spacing={3}>
           {isDesktop && (
             <Grid item xs={12} md={6} lg={7} sx={{ pr: { md: 7 } }}>
-              <Grid container spacing={3} alignItems="flex-end">
+              <Grid container spacing={3} alignItems="flex-start">
+                {/* item 1 */}
                 <Grid item xs={6}>
                   <m.div variants={varFade().inUp}>
                     <Image
-                      alt="our office 1"
+                      alt="wordpress"
                       src="/assets/images/about/what_1.jpg"
                       ratio="3/4"
                       sx={{
@@ -57,13 +58,39 @@ export default function AboutWhat() {
                     />
                   </m.div>
                 </Grid>
+                {/* item 2 */}
                 <Grid item xs={6}>
                   <m.div variants={varFade().inUp}>
                     <Image
-                      alt="our office 2"
+                      alt="wordpress plugins"
                       src="/assets/images/about/what_2.jpg"
                       ratio="1/1"
                       sx={{ borderRadius: 2 }}
+                    />
+                  </m.div>
+                </Grid>
+                {/* item 3 */}
+                <Grid item xs={12} sm={6}>
+                  <m.div variants={varFade().inUp}>
+                    <Image
+                      alt="wordpress plugins"
+                      src="/assets/images/about/what_3.jpg"
+                      ratio="1/1"
+                      sx={{ borderRadius: 2 }}
+                    />
+                  </m.div>
+                </Grid>
+                {/* item 4 */}
+                <Grid item xs={12} sm={6} mt={-12}>
+                  <m.div variants={varFade().inUp}>
+                    <Image
+                      alt="wordpress"
+                      src="/assets/images/about/what_4.jpg"
+                      ratio="3/4"
+                      sx={{
+                        borderRadius: 2,
+                        boxShadow: shadow,
+                      }}
                     />
                   </m.div>
                 </Grid>
@@ -85,12 +112,14 @@ export default function AboutWhat() {
                     theme.palette.mode === 'light' ? 'text.secondary' : 'common.white',
                 }}
               >
-                Devsite Studio stands out as the pinnacle of advanced and user-friendly web
-                development services in the market. Our comprehensive documentation and
-                instructional videos simplify the site setup process. With one-click import for
-                pre-installed demos, every aspect, from theme options to page content, is
-                effortlessly editable directly from the front-end. Discover the web development
-                solution you've been searching for.
+                Devsite Studio reigns supreme as the ultimate destination for
+                <strong style={{ color: theme.palette.primary.main }}> WordPress experts </strong>
+                seeking advanced and intuitive web development services. Our unparalleled
+                documentation and instructional videos streamline the site setup process, empowering
+                you to effortlessly customize every aspect of your website directly from the
+                front-end. With seamless one-click import for pre-installed demos, unleash the full
+                potential of your website with editable theme options and page content. Find the
+                WordPress development solution you've been longing for.
               </Typography>
             </m.div>
 
@@ -131,6 +160,7 @@ type ProgressItemProps = {
 };
 
 function ProgressItem({ progress }: ProgressItemProps) {
+  const theme = useTheme();
   const { label, value } = progress;
   return (
     <Box sx={{ mt: 3 }}>
@@ -144,7 +174,7 @@ function ProgressItem({ progress }: ProgressItemProps) {
         variant="determinate"
         value={value}
         sx={{
-          '& .MuiLinearProgress-bar': { bgcolor: 'grey.700' },
+          '& .MuiLinearProgress-bar': { bgcolor: theme.palette.primary.main },
           '&.MuiLinearProgress-determinate': { bgcolor: 'divider' },
         }}
       />
@@ -154,12 +184,23 @@ function ProgressItem({ progress }: ProgressItemProps) {
 
 const _skills = [
   {
-    label: 'Development',
+    label: 'WordPress Development',
     value: 95.5,
   },
   {
-    label: 'Design',
+    label: 'WordPress Theme Customization',
     value: 90,
   },
-  { label: 'Marketing', value: 60 },
+  {
+    label: 'WordPress Plugin Development',
+    value: 85,
+  },
+  {
+    label: 'Development', // Original label, you might want to update this
+    value: 80, // Update value if needed
+  },
+  {
+    label: 'Design', // Original label, you might want to update this
+    value: 70, // Update value if needed
+  },
 ];

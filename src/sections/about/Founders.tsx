@@ -1,16 +1,22 @@
-import { Grid, Card, Typography, IconButton, alpha, Box, useMediaQuery } from '@mui/material';
+import { Grid, Card, Typography, IconButton, alpha, Box, useTheme } from '@mui/material';
 import Image from '../../components/image';
 import Iconify from 'src/components/iconify';
 import { m } from 'framer-motion';
 import { varFade } from 'src/components/animate';
 
 export default function Founders() {
+  const theme = useTheme();
+  const isLight = theme.palette.mode === 'light';
+
   return (
     <Grid container spacing={2} alignItems="center" justifyContent="center">
       {_carouselsMembers.map((member) => (
         <Grid item key={member.id} xs={12} sm={6} md={3}>
           <Box component={m.div} variants={varFade().in} sx={{ px: 1.5, py: 2 }}>
-            <Card key={member.name}>
+            <Card
+              key={member.name}
+              sx={{ bgcolor: isLight ? theme.palette.grey[300] : theme.palette.grey[800] }}
+            >
               <Typography variant="subtitle1" sx={{ mt: 2, mb: 0.5 }}>
                 {member.name}
               </Typography>
@@ -58,7 +64,7 @@ const _carouselsMembers = [
     id: '001',
     name: 'Md Musfikur Rahman',
     role: 'Founder & CTO',
-    avatar: `/assets/images/portraits/musfik.jpeg`,
+    avatar: `/assets/images/portraits/musfik.png`,
     _socials: [
       {
         value: 'facebook',
@@ -94,7 +100,7 @@ const _carouselsMembers = [
     id: '002',
     name: 'Ali Ahsan Md Muzahid',
     role: 'Founder & CEO',
-    avatar: `/assets/images/portraits/muzahid.jpg`,
+    avatar: `/assets/images/portraits/muzahid.png`,
     _socials: [
       {
         value: 'facebook',

@@ -36,7 +36,7 @@ const StyledRoot = styled('div')(({ theme }) => ({
 }));
 
 const StyledDescription = styled('div')(({ theme }) => ({
-  maxWidth: 480,
+  maxWidth: 400,
   margin: 'auto',
   display: 'flex',
   flexDirection: 'column',
@@ -52,21 +52,21 @@ const StyledGradientText = styled(m.h1)(({ theme }) => ({
   ),
   backgroundSize: '400%',
   fontFamily: "'Barlow', sans-serif",
-  fontSize: `${64 / 16}rem`,
+  fontSize: `${56 / 16}rem`,
   textAlign: 'center',
   lineHeight: 1,
   padding: 0,
   marginTop: 8,
   marginBottom: 24,
-  letterSpacing: 8,
+  letterSpacing: 2,
   [theme.breakpoints.up('md')]: {
-    fontSize: `${96 / 16}rem`,
+    fontSize: `${88 / 16}rem`,
   },
 }));
 
 const StyledEllipseTop = styled('div')(({ theme }) => ({
   position: 'absolute',
-  height: 480,
+  height: 400,
   top: -80,
   right: -80,
   borderRadius: '50%',
@@ -145,8 +145,8 @@ function Description() {
   return (
     <StyledDescription>
       <m.div variants={varFade().in}>
-        <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Transform with
+        <Typography variant="h3" sx={{ textAlign: 'center' }}>
+          Boost your site with
         </Typography>
       </m.div>
 
@@ -160,14 +160,14 @@ function Description() {
             repeat: Infinity,
           }}
         >
-          Devsite Studio
+          WordPress Magic
         </StyledGradientText>
       </m.div>
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          Embark on a new project journey with DevSite Studio, your dedicated partner in front-end
-          web development!
+          Unlock endless possibilities with DevSite Studio <br /> your trusted WordPress companion
+          for stunning front-end web development!
         </Typography>
       </m.div>
 

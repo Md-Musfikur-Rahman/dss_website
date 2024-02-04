@@ -5,7 +5,7 @@ import { Container, Box } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { CareerHero, CareerList } from '../sections/career';
+import { Benifits, CareerHero, CareerList } from '../sections/career';
 
 // ----------------------------------------------------------------------
 
@@ -25,6 +25,7 @@ export default function ContactPage() {
       <Container sx={{ py: 10 }}>
         <Box gap={10} display="grid">
           <CareerList />
+          {/* <Benifits /> */}
         </Box>
       </Container>
     </>

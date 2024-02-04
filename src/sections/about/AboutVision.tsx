@@ -48,7 +48,7 @@ export default function AboutVision() {
       </Box>
 
       <m.div variants={varFade().inUp}>
-        <Typography variant="h3" sx={{ textAlign: 'center', maxWidth: 850, mx: 'auto' }}>
+        <Typography variant="h3" sx={{ textAlign: 'center', maxWidth: 850, mx: 'auto', my: 5 }}>
           Striving for excellence, we craft unrivaled products at Devsite Studio for an exceptional
           user experience.
         </Typography>

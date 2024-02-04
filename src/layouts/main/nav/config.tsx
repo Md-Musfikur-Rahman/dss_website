@@ -17,6 +17,11 @@ const navConfig = [
     icon: <Iconify icon="ic:round-grain" />,
     path: PATH_PAGE.about,
   },
+  {
+    title: 'Case Study',
+    icon: <Iconify icon="ic:round-grain" />,
+    path: PATH_PAGE.case,
+  },
   // {
   //   title: 'Pages',
   //   path: '/pages',

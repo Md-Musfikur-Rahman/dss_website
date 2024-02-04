@@ -11,28 +11,28 @@ import { MotionViewport, varFade } from '../../components/animate';
 const CARDS = [
   {
     icon: '/assets/icons/home/ic_make_brand.svg',
-    title: 'Web Branding',
+    title: 'WordPress Branding',
     description:
-      'Craft a distinctive online brand with our expert web design and development services.',
+      'Establish a unique online identity with our specialized WordPress design and development services.',
   },
   {
     icon: '/assets/icons/home/ic_design.svg',
-    title: 'Responsive UI & UX Design',
+    title: 'WordPress Theme Customization',
     description:
-      'Our designs are based on the principles of the atomic design system, ensuring fast project creation and customizable packages tailored to your needs.',
+      'Transform your website with our responsive and user-friendly WordPress themes, tailored to your specific requirements.',
   },
   {
     icon: '/assets/icons/home/ic_development.svg',
-    title: 'Web Development Solutions',
+    title: 'WordPress Development Solutions',
     description:
-      'Effortlessly customize and extend your web projects, saving both time and money with Devsite Studio.',
+      'Harness the power of WordPress with our comprehensive development solutions, enabling seamless customization and scalability for your web projects.',
   },
 ];
 
 const StyledRoot = styled('div')(({ theme }) => ({
-  padding: theme.spacing(10, 0),
+  padding: theme.spacing(8, 0),
   [theme.breakpoints.up('md')]: {
-    padding: theme.spacing(15, 0),
+    padding: theme.spacing(8, 0),
   },
 }));
 
@@ -55,7 +55,7 @@ export default function HomeMinimal() {
           spacing={3}
           sx={{
             textAlign: 'center',
-            mb: { xs: 5, md: 10 },
+            mb: 5,
           }}
         >
           <m.div variants={varFade().inUp}>

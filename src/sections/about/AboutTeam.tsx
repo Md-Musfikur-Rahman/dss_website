@@ -15,14 +15,14 @@ export default function AboutTeam() {
     <Container component={MotionViewport} sx={{ mt: 10, textAlign: 'center' }}>
       {/* Founders */}
       <m.div variants={varFade().inUp}>
-        <Typography variant="h3" sx={{ my: 1 }}>
+        <Typography variant="h3" sx={{ my: 3 }}>
           Meet the Founders: Driving Success Through Collaboration
         </Typography>
       </m.div>
       <Founders />
 
       <m.div variants={varFade().inDown}>
-        <Typography component="p" variant="overline" sx={{ color: 'text.disabled' }}>
+        <Typography component="p" variant="overline" sx={{ color: 'text.disabled', mt: 10 }}>
           Dream team
         </Typography>
       </m.div>
@@ -47,16 +47,6 @@ export default function AboutTeam() {
       </m.div>
 
       <TeamMember />
-
-      {/* <Button
-        variant="outlined"
-        color="inherit"
-        size="large"
-        endIcon={<Iconify icon="ic:round-arrow-right-alt" width={24} />}
-        sx={{ mx: 'auto' }}
-      >
-        View all team members
-      </Button> */}
     </Container>
   );
 }

@@ -15,12 +15,12 @@ export default function Pricing() {
   const desktopList = (
     <Container
       sx={{
-        pt: 15,
-        pb: 10,
+        pt: 5,
+        pb: 5,
         minHeight: 1,
       }}
     >
-      <Box gap={3} my={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
+      <Box gap={3} mt={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
         {_pricingPlans.map((card, index) => (
           <PricingPlanCard key={card.subscription} card={card} index={index} />
         ))}
@@ -38,7 +38,7 @@ export default function Pricing() {
         </Tabs>
       </Stack>
 
-      <Box gap={3} my={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
+      <Box gap={3} mt={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
         {_pricingPlans.map(
           (tab, index) =>
             tab.subscription === currentTab && (
@@ -50,12 +50,12 @@ export default function Pricing() {
   );
   return (
     <>
-      <Typography variant="h3" align="center" paragraph my={3}>
+      <Typography variant="h3" align="center" paragraph mt={10}>
         Flexible plans for your
         <br /> community&apos;s size and needs
       </Typography>
 
-      <Typography align="center" my={3} sx={{ color: 'text.secondary' }}>
+      <Typography align="center" mt={3} sx={{ color: 'text.secondary' }}>
         Choose your plan and make modern online conversation magic
       </Typography>
 
@@ -65,10 +65,7 @@ export default function Pricing() {
         <Box
           sx={{
             textAlign: 'center',
-            mt: {
-              xs: 5,
-              md: 10,
-            },
+            mt: 5,
           }}
         >
           <m.div variants={varFade().inDown}>
