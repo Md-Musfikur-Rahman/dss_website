@@ -11,8 +11,8 @@ import {
   HomeHero,
   HomeMinimal,
   HomeLookingFor,
-  HomePricingPlans,
   HomeAdvertisement,
+  Pricing,
 } from '../sections/home';
 
 import { About, AboutTestimonials } from '../sections/about';
@@ -73,7 +73,7 @@ export default function HomePage() {
 
         <AboutTestimonials />
 
-        <HomePricingPlans />
+        <Pricing />
 
         <HomeLookingFor />
 

@@ -15,13 +15,12 @@ import {
 } from '@mui/material';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
-// _mock_
-import { _homePlans } from '../../_mock/arrays';
 // components
 import SvgColor from '../../components/svg-color';
 import Iconify from '../../components/iconify';
 import { varFade, MotionViewport } from '../../components/animate';
 import { PATH_PAGE } from 'src/routes/paths';
+import { _homePlans } from 'src/_mock/arrays';
 
 // ----------------------------------------------------------------------
 
@@ -77,7 +76,7 @@ function Description() {
 function Content() {
   const isDesktop = useResponsive('up', 'md');
 
-  const [currentTab, setCurrentTab] = useState('Standard');
+  const [currentTab, setCurrentTab] = useState('Essential');
 
   const desktopList = (
     <Box
@@ -195,9 +194,9 @@ interface PlanCardProps extends StackProps {
 function PlanCard({ plan, sx, ...other }: PlanCardProps) {
   const { license, commons, options, icons } = plan;
 
-  const standard = license === 'Standard';
+  const standard = license === 'Essential';
 
-  const plus = license === 'Standard Plus';
+  const plus = license === 'Enhanced';
 
   return (
     <Stack
@@ -215,7 +214,7 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
     >
       <Stack spacing={2}>
         <Typography variant="overline" component="div" sx={{ color: 'text.disabled' }}>
-          License
+          Package
         </Typography>
 
         <Box sx={{ position: 'relative' }}>
@@ -258,10 +257,7 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
 
         {options.map((option, optionIndex) => {
           const disabled =
-            (standard && optionIndex === 1) ||
-            (standard && optionIndex === 2) ||
-            (standard && optionIndex === 3) ||
-            (plus && optionIndex === 3);
+            (standard && optionIndex > 0) || (plus && optionIndex >= options.length - 3);
 
           return (
             <Stack
@@ -295,3 +291,56 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
     </Stack>
   );
 }
+
+//-----------------------------------------------------------------
+
+const homePlans = [
+  {
+    license: 'Starter Spark',
+    commons: ['One end products', '12 months updates', '6 months of support'],
+    options: [
+      'JavaScript version',
+      'TypeScript version',
+      'Design Resources',
+      'Commercial applications',
+    ],
+    icons: [
+      '/assets/icons/platforms/ic_sketch.svg',
+      '/assets/icons/platforms/ic_figma.svg',
+      '/assets/icons/platforms/ic_js.svg',
+      '/assets/icons/platforms/ic_ts.svg',
+    ],
+  },
+  {
+    license: 'Growth Pulse',
+    commons: ['One end products', '12 months updates', '6 months of support'],
+    options: [
+      'JavaScript version',
+      'TypeScript version',
+      'Design Resources',
+      'Commercial applications',
+    ],
+    icons: [
+      '/assets/icons/platforms/ic_sketch.svg',
+      '/assets/icons/platforms/ic_figma.svg',
+      '/assets/icons/platforms/ic_js.svg',
+      '/assets/icons/platforms/ic_ts.svg',
+    ],
+  },
+  {
+    license: 'Elevate Pro',
+    commons: ['One end products', '12 months updates', '6 months of support'],
+    options: [
+      'JavaScript version',
+      'TypeScript version',
+      'Design Resources',
+      'Commercial applications',
+    ],
+    icons: [
+      '/assets/icons/platforms/ic_sketch.svg',
+      '/assets/icons/platforms/ic_figma.svg',
+      '/assets/icons/platforms/ic_js.svg',
+      '/assets/icons/platforms/ic_ts.svg',
+    ],
+  },
+];

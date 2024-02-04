@@ -8,6 +8,7 @@ import { _pricingPlans } from '../_mock/arrays';
 import SimpleLayout from '../layouts/simple';
 // sections
 import { PricingPlanCard } from '../sections/pricing';
+import { HomePricingPlans } from 'src/sections/home';
 
 // ----------------------------------------------------------------------
 
@@ -22,7 +23,9 @@ export default function PricingPage() {
         <title> Pricing | Devsite Studio</title>
       </Head>
 
-      <Container
+      <HomePricingPlans />
+
+      {/* <Container
         sx={{
           pt: 15,
           pb: 10,
@@ -38,33 +41,12 @@ export default function PricingPage() {
           Choose your plan and make modern online conversation magic
         </Typography>
 
-        <Box sx={{ my: 5 }}>
-          <Stack direction="row" alignItems="center" justifyContent="flex-end">
-            <Typography variant="overline" sx={{ mr: 1.5 }}>
-              MONTHLY
-            </Typography>
-
-            <Switch />
-            <Typography variant="overline" sx={{ ml: 1.5 }}>
-              YEARLY (save 10%)
-            </Typography>
-          </Stack>
-
-          <Typography
-            variant="caption"
-            align="right"
-            sx={{ color: 'text.secondary', display: 'block' }}
-          >
-            * Plus applicable taxes
-          </Typography>
-        </Box>
-
-        <Box gap={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
+        <Box gap={3} my={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
           {_pricingPlans.map((card, index) => (
             <PricingPlanCard key={card.subscription} card={card} index={index} />
           ))}
         </Box>
-      </Container>
+      </Container> */}
     </>
   );
 }

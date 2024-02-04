@@ -5,6 +5,7 @@ import Label from '../../components/label';
 import Iconify from '../../components/iconify';
 // assets
 import { PlanFreeIcon, PlanStarterIcon, PlanPremiumIcon } from '../../assets/icons';
+import { PATH_PAGE } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -50,15 +51,8 @@ export default function PricingPlanCard({ card, index, sx, ...other }: Props) {
       </Typography>
 
       <Stack spacing={1} direction="row" sx={{ my: 2 }}>
-        {(index === 1 || index === 2) && <Typography variant="h5">$</Typography>}
-
-        <Typography variant="h2">{price === 0 ? 'Free' : price}</Typography>
-
-        {(index === 1 || index === 2) && (
-          <Typography component="span" sx={{ alignSelf: 'center', color: 'text.secondary' }}>
-            /mo
-          </Typography>
-        )}
+        <Typography variant="h5">$</Typography>
+        <Typography variant="h2">{price}</Typography>
       </Stack>
 
       <Typography
@@ -72,8 +66,8 @@ export default function PricingPlanCard({ card, index, sx, ...other }: Props) {
       </Typography>
 
       <Box sx={{ width: 80, height: 80, mt: 5 }}>
-        {(subscription === 'basic' && <PlanFreeIcon />) ||
-          (subscription === 'starter' && <PlanStarterIcon />) || <PlanPremiumIcon />}
+        {(subscription === 'Essential' && <PlanFreeIcon />) ||
+          (subscription === 'Enhanced' && <PlanStarterIcon />) || <PlanPremiumIcon />}
       </Box>
 
       <Stack component="ul" spacing={2} sx={{ p: 0, my: 5 }}>
@@ -101,7 +95,7 @@ export default function PricingPlanCard({ card, index, sx, ...other }: Props) {
         ))}
       </Stack>
 
-      <Button fullWidth size="large" variant="contained" disabled={index === 0}>
+      <Button fullWidth size="large" variant="contained" href={PATH_PAGE.pricing}>
         {labelAction}
       </Button>
     </Card>

@@ -1,3 +1,4 @@
+export { default as Pricing } from './Pricing';
 export { default as HomeHero } from './HomeHero';
 export { default as HomeMinimal } from './HomeMinimal';
 export { default as HomeDarkMode } from './HomeDarkMode';
