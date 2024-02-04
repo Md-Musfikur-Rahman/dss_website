@@ -282,65 +282,12 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
           size="small"
           target="_blank"
           rel="noopener"
-          href={PATH_PAGE.pricing}
+          href={PATH_PAGE.calendly}
           endIcon={<Iconify icon="eva:chevron-right-fill" />}
         >
-          Learn more
+          Select package
         </Button>
       </Stack>
     </Stack>
   );
 }
-
-//-----------------------------------------------------------------
-
-const homePlans = [
-  {
-    license: 'Starter Spark',
-    commons: ['One end products', '12 months updates', '6 months of support'],
-    options: [
-      'JavaScript version',
-      'TypeScript version',
-      'Design Resources',
-      'Commercial applications',
-    ],
-    icons: [
-      '/assets/icons/platforms/ic_sketch.svg',
-      '/assets/icons/platforms/ic_figma.svg',
-      '/assets/icons/platforms/ic_js.svg',
-      '/assets/icons/platforms/ic_ts.svg',
-    ],
-  },
-  {
-    license: 'Growth Pulse',
-    commons: ['One end products', '12 months updates', '6 months of support'],
-    options: [
-      'JavaScript version',
-      'TypeScript version',
-      'Design Resources',
-      'Commercial applications',
-    ],
-    icons: [
-      '/assets/icons/platforms/ic_sketch.svg',
-      '/assets/icons/platforms/ic_figma.svg',
-      '/assets/icons/platforms/ic_js.svg',
-      '/assets/icons/platforms/ic_ts.svg',
-    ],
-  },
-  {
-    license: 'Elevate Pro',
-    commons: ['One end products', '12 months updates', '6 months of support'],
-    options: [
-      'JavaScript version',
-      'TypeScript version',
-      'Design Resources',
-      'Commercial applications',
-    ],
-    icons: [
-      '/assets/icons/platforms/ic_sketch.svg',
-      '/assets/icons/platforms/ic_figma.svg',
-      '/assets/icons/platforms/ic_js.svg',
-      '/assets/icons/platforms/ic_ts.svg',
-    ],
-  },
-];
