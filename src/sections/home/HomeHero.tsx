@@ -267,14 +267,14 @@ function Content() {
           component={m.img}
           animate={{ y: ['0%', '100%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_1.png`}
+          src={`/assets/images/home/hero_light_1.png`}
           sx={{ position: 'absolute' }}
         />
         <Box
           component={m.img}
           animate={{ y: ['-100%', '0%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_1.png`}
+          src={`/assets/images/home/hero_light_1.png`}
           sx={{ position: 'absolute' }}
         />
       </Stack>
@@ -288,14 +288,14 @@ function Content() {
           component={m.img}
           animate={{ y: ['100%', '0%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_2.png`}
+          src={`/assets/images/home/hero_light_2.png`}
           sx={{ position: 'absolute' }}
         />
         <Box
           component={m.img}
           animate={{ y: ['0%', '-100%'] }}
           transition={transition}
-          src={`/assets/images/home/hero_${isLight ? 'light' : 'dark'}_2.png`}
+          src={`/assets/images/home/hero_light_2.png`}
           sx={{ position: 'absolute' }}
         />
       </Stack>
