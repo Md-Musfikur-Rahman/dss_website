@@ -145,10 +145,46 @@ const _carouselsMembers = [
     ],
   },
   {
+    id: '003',
+    name: 'Shakidul Islam Shakil',
+    role: 'Full Stack Developer',
+    avatar: `/assets/images/portraits/shakil.jpeg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/mdmusfikurrahman',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+  {
     id: '001',
-    name: 'Miraz Uddin',
+    name: 'Md Miraj Uddin',
     role: 'Wordpress Developer',
-    avatar: `/assets/images/portraits/miraz.png`,
+    avatar: `/assets/images/portraits/miraz.jpeg`,
     _socials: [
       {
         value: 'facebook',
@@ -217,31 +253,31 @@ const _carouselsMembers = [
     ],
   },
   {
-    id: '003',
-    name: 'Shakidul Islam Shakil',
-    role: 'Full Stack Developer',
-    avatar: `/assets/images/portraits/shakil.jpeg`,
+    id: '005',
+    name: 'Md Asikuzzaman',
+    role: 'Front-End Expert',
+    avatar: `/assets/images/portraits/asik.jpeg`,
     _socials: [
       {
         value: 'facebook',
         name: 'FaceBook',
         icon: 'eva:facebook-fill',
         color: '#1877F2',
-        path: 'https://www.facebook.com/mdmusfikurrahman23',
+        path: 'https://www.facebook.com/devsitestudio',
       },
       {
         value: 'instagram',
         name: 'Instagram',
         icon: 'ant-design:instagram-filled',
         color: '#E02D69',
-        path: 'https://www.instagram.com/mdmusfikurrahman23',
+        path: 'https://www.instagram.com/devsitestudio',
       },
       {
         value: 'linkedin',
         name: 'Linkedin',
         icon: 'eva:linkedin-fill',
         color: '#007EBB',
-        path: 'https://www.linkedin.com/in/mdmusfikurrahman',
+        path: 'https://www.linkedin.com/company/devsitestudio',
       },
       {
         value: 'twitter',
@@ -253,10 +289,46 @@ const _carouselsMembers = [
     ],
   },
   {
-    id: '005',
-    name: 'Md Asikuzzaman',
-    role: 'Front-End Expert',
-    avatar: `/assets/images/portraits/asik.jpeg`,
+    id: '006',
+    name: 'Moshfeca Iffath Nishi',
+    role: 'SEO Expert',
+    avatar: `/assets/images/portraits/nishi.jpeg`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/devsitestudio',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/devsitestudio',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/company/devsitestudio',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/devsitestudio',
+      },
+    ],
+  },
+  {
+    id: '007',
+    name: 'Tahsina Islam Lubna',
+    role: 'Social Media Manager',
+    avatar: `/assets/images/portraits/lubna.jpeg`,
     _socials: [
       {
         value: 'facebook',

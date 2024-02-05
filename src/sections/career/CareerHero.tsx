@@ -1,7 +1,7 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Stack, Container, Typography, useMediaQuery, useTheme, Box } from '@mui/material';
+import { Stack, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { TextAnimate, MotionContainer, varFade } from '../../components/animate';
 
 // ----------------------------------------------------------------------

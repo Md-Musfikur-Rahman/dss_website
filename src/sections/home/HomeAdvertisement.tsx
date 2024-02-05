@@ -5,7 +5,7 @@ import { Button, Box, Container, Stack } from '@mui/material';
 // utils
 import { bgGradient } from '../../utils/cssStyles';
 // routes
-import { PATH_FREE_VERSION, PATH_MINIMAL_ON_STORE } from '../../routes/paths';
+import { PATH_FREE_VERSION, PATH_MINIMAL_ON_STORE, PATH_PAGE } from '../../routes/paths';
 // components
 import Iconify from '../../components/iconify';
 import Image from '../../components/image';
@@ -71,7 +71,7 @@ function Description() {
             variant="contained"
             target="_blank"
             rel="noopener"
-            href={PATH_MINIMAL_ON_STORE}
+            href={PATH_PAGE.pricing}
             sx={{
               color: 'grey.800',
               bgcolor: 'common.white',

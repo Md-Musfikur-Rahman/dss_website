@@ -7,6 +7,7 @@ import { _carouselsMembers } from '../../_mock/arrays';
 import Iconify from '../../components/iconify';
 import { MotionViewport, varFade } from '../../components/animate';
 import { TeamMember, Founders } from './';
+import { PATH_PAGE } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -47,6 +48,17 @@ export default function AboutTeam() {
       </m.div>
 
       <TeamMember />
+
+      <Button
+        variant="outlined"
+        color="inherit"
+        size="large"
+        href={PATH_PAGE.career}
+        endIcon={<Iconify icon="ic:round-arrow-right-alt" width={24} />}
+        sx={{ mx: 'auto', mt: 5 }}
+      >
+        Interested in joining{' '}
+      </Button>
     </Container>
   );
 }

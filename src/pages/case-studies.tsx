@@ -23,8 +23,6 @@ export default function CaseStudy() {
 
       <Case />
 
-      <CaseCard />
-
       <AboutTestimonials />
     </>
   );
