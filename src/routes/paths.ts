@@ -34,7 +34,7 @@ export const PATH_PAGE = {
   components: '/components',
   career: '/career',
   calendly: '/calendly',
-  case: './case-studies',
+  case: '/case-studies',
 };
 
 export const PATH_DASHBOARD = {

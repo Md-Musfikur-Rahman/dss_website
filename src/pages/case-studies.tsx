@@ -4,6 +4,7 @@ import Head from 'next/head';
 import MainLayout from '../layouts/main';
 // sections
 import { Case, CaseCard, CaseHero } from 'src/sections/case';
+import { AboutTestimonials } from 'src/sections/about';
 
 // ----------------------------------------------------------------------
 
@@ -23,6 +24,8 @@ export default function CaseStudy() {
       <Case />
 
       <CaseCard />
+
+      <AboutTestimonials />
     </>
   );
 }

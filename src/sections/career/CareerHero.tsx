@@ -1,7 +1,7 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Stack, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Stack, Container, Typography, useMediaQuery, useTheme, Box } from '@mui/material';
 import { TextAnimate, MotionContainer, varFade } from '../../components/animate';
 
 // ----------------------------------------------------------------------
@@ -37,21 +37,19 @@ export default function CareerHero() {
     <StyledRoot>
       <Container component={MotionContainer}>
         <StyledContent>
+          {' '}
           <TextAnimate
-            text="Explore"
+            text="Discover"
             sx={{
               color: 'primary.main',
             }}
             variants={varFade().inRight}
           />
-
           <br />
-
           <Stack spacing={2} display="inline-flex" direction="row" sx={{ color: 'common.white' }}>
-            <TextAnimate text="Career" />
-            <TextAnimate text="Opportunities" />
+            <TextAnimate text="Job" />
+            <TextAnimate text="Openings" />
           </Stack>
-
           <m.div variants={varFade().inRight}>
             <Typography
               variant="h4"
