@@ -327,7 +327,7 @@ const _carouselsMembers = [
   {
     id: '007',
     name: 'Tahsina Islam Lubna',
-    role: 'Social Media Manager',
+    role: 'WordPress Developer',
     avatar: `/assets/images/portraits/lubna.jpeg`,
     _socials: [
       {
