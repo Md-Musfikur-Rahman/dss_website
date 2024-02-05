@@ -11,10 +11,14 @@ import {
   Divider,
   Button,
   useTheme,
+  Container,
+  Stack,
 } from '@mui/material';
+import { varFade, MotionViewport } from '../../components/animate';
 // components
 import Iconify from '../../components/iconify';
 import SendIcon from '@mui/icons-material/Send';
+import { m } from 'framer-motion';
 
 // ----------------------------------------------------------------------
 const JobPositions = [
@@ -108,16 +112,27 @@ export default function CareerList() {
   const theme = useTheme();
 
   return (
-    <div>
-      <Typography variant="h2" sx={{ mb: 5 }}>
-        Open positions
-      </Typography>
-      <Typography variant="body1" sx={{ maxWidth: 850, mb: 5 }}>
-        Seize the chance to join our innovative and progressive team. Reach out to us at
-        <span style={{ color: theme.palette.primary.main }}> hr@devsitestudio.com </span>
-        and let's discuss how your skills can fit into our exciting roles. We look forward to
-        hearing from you!
-      </Typography>
+    <Container component={MotionViewport}>
+      <Stack spacing={3} sx={{ mb: 3, textAlign: 'center' }}>
+        <m.div variants={varFade().inDown}>
+          <Typography variant="h2">Open opportunities</Typography>
+        </m.div>
+      </Stack>
+
+      <Stack>
+        <m.div variants={varFade().inUp}>
+          <Typography
+            variant="body1"
+            sx={{ maxWidth: 850, mb: 5, mx: 'auto', textAlign: 'center' }}
+          >
+            Seize the chance to join our innovative and progressive team. Reach out to us at
+            <span style={{ color: theme.palette.primary.main }}> hr@devsitestudio.com </span>
+            and let's discuss how your skills can fit into our exciting roles. We look forward to
+            hearing from you!
+          </Typography>
+        </m.div>
+      </Stack>
+
       {JobPositions.map((job, id) => (
         <Accordion key={id}>
           <AccordionSummary expandIcon={<Iconify icon="eva:arrow-ios-downward-fill" />}>
@@ -161,6 +176,6 @@ export default function CareerList() {
           </AccordionDetails>
         </Accordion>
       ))}
-    </div>
+    </Container>
   );
 }

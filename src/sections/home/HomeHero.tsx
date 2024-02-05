@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 // next
 import NextLink from 'next/link';
 // @mui
-import { styled, alpha, useTheme } from '@mui/material/styles';
+import { styled, alpha } from '@mui/material/styles';
 import { Button, Box, Link, Container, Typography, Stack, Grid } from '@mui/material';
 // routes
-import { PATH_DASHBOARD, PATH_PAGE } from '../../routes/paths';
+import { PATH_PAGE } from '../../routes/paths';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
 // utils
@@ -52,15 +52,15 @@ const StyledGradientText = styled(m.h1)(({ theme }) => ({
   ),
   backgroundSize: '400%',
   fontFamily: "'Barlow', sans-serif",
-  fontSize: `${56 / 16}rem`,
+  fontSize: `${68 / 16}rem`,
   textAlign: 'center',
   lineHeight: 1,
   padding: 0,
   marginTop: 8,
-  marginBottom: 24,
+  marginBottom: 8,
   letterSpacing: 2,
   [theme.breakpoints.up('md')]: {
-    fontSize: `${88 / 16}rem`,
+    fontSize: `${80 / 16}rem`,
   },
 }));
 
@@ -117,7 +117,7 @@ export default function HomeHero() {
       <StyledRoot>
         <Container component={MotionContainer} sx={{ height: 1 }}>
           <Grid container spacing={10} sx={{ height: 1 }}>
-            <Grid item xs={12} md={6} sx={{ height: 1 }}>
+            <Grid item xs={12} md={6} alignItems="center" justifyContent="center">
               <Description />
             </Grid>
 
@@ -133,7 +133,6 @@ export default function HomeHero() {
 
         <StyledEllipseBottom />
       </StyledRoot>
-
       <Box sx={{ height: { md: '100vh' } }} />
     </>
   );
@@ -142,10 +141,12 @@ export default function HomeHero() {
 // ----------------------------------------------------------------------
 
 function Description() {
+  const isDesktop = useResponsive('up', 'md');
+
   return (
     <StyledDescription>
       <m.div variants={varFade().in}>
-        <Typography variant="h3" sx={{ textAlign: 'center' }}>
+        <Typography variant={isDesktop ? 'h3' : 'h2'} sx={{ textAlign: 'center' }}>
           Boost your site with
         </Typography>
       </m.div>
@@ -165,14 +166,13 @@ function Description() {
       </m.div>
 
       <m.div variants={varFade().in}>
-        <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          Unlock endless possibilities with DevSite Studio <br /> your trusted WordPress companion
-          for stunning front-end web development!
+        <Typography variant="body2" sx={{ textAlign: 'center', maxWidth: '80%', mx: 'auto' }}>
+          Unlock endless possibilities with DevSite Studio
         </Typography>
       </m.div>
 
       <m.div variants={varFade().in}>
-        <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 5 }}>
+        <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 3 }}>
           <Stack alignItems="center" spacing={2}>
             <NextLink href={PATH_PAGE.calendly} passHref>
               <Button
@@ -240,10 +240,6 @@ function Description() {
 // ----------------------------------------------------------------------
 
 function Content() {
-  const theme = useTheme();
-
-  const isLight = theme.palette.mode === 'light';
-
   const transition = {
     repeatType: 'loop',
     ease: 'linear',

@@ -112,14 +112,14 @@ export default function AboutWhat() {
                     theme.palette.mode === 'light' ? 'text.secondary' : 'common.white',
                 }}
               >
-                Devsite Studio reigns supreme as the ultimate destination for
-                <strong style={{ color: theme.palette.primary.main }}> WordPress experts </strong>
-                seeking advanced and intuitive web development services. Our unparalleled
-                documentation and instructional videos streamline the site setup process, empowering
-                you to effortlessly customize every aspect of your website directly from the
-                front-end. With seamless one-click import for pre-installed demos, unleash the full
-                potential of your website with editable theme options and page content. Find the
-                WordPress development solution you've been longing for.
+                Your premier destination for{' '}
+                <span style={{ color: theme.palette.primary.main }}>WordPress expertise</span> and
+                custom web development excellence. With a focus on cutting-edge technologies like{' '}
+                <span style={{ color: theme.palette.primary.main }}>React.js</span> and{' '}
+                <span style={{ color: theme.palette.primary.main }}>Next.js</span>, we streamline
+                setup, offer effortless demo imports, and empower seamless customization. Whether
+                you're refining your WordPress site or crafting a bespoke project, unlock limitless
+                potential with our tailored solutions.
               </Typography>
             </m.div>
 

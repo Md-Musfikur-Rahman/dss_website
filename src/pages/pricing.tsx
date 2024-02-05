@@ -1,18 +1,17 @@
 // next
 import Head from 'next/head';
-// @mui
-import { Box, Switch, Container, Typography, Stack } from '@mui/material';
 // _mock_
 import { _pricingPlans } from '../_mock/arrays';
 // layouts
-import SimpleLayout from '../layouts/simple';
+import MainLayout from '../layouts/main';
 // sections
-import { PricingPlanCard } from '../sections/pricing';
-import { HomePricingPlans } from 'src/sections/home';
+import { Container } from '@mui/material';
+import { Pricing, PricingHero } from 'src/sections/pricing';
+import { MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 
-PricingPage.getLayout = (page: React.ReactElement) => <SimpleLayout>{page}</SimpleLayout>;
+PricingPage.getLayout = (page: React.ReactElement) => <MainLayout>{page}</MainLayout>;
 
 // ----------------------------------------------------------------------
 
@@ -23,30 +22,8 @@ export default function PricingPage() {
         <title> Pricing | Devsite Studio</title>
       </Head>
 
-      <HomePricingPlans />
-
-      {/* <Container
-        sx={{
-          pt: 15,
-          pb: 10,
-          minHeight: 1,
-        }}
-      >
-        <Typography variant="h3" align="center" paragraph>
-          Flexible plans for your
-          <br /> community&apos;s size and needs
-        </Typography>
-
-        <Typography align="center" sx={{ color: 'text.secondary' }}>
-          Choose your plan and make modern online conversation magic
-        </Typography>
-
-        <Box gap={3} my={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
-          {_pricingPlans.map((card, index) => (
-            <PricingPlanCard key={card.subscription} card={card} index={index} />
-          ))}
-        </Box>
-      </Container> */}
+      <PricingHero />
+      <Pricing />
     </>
   );
 }

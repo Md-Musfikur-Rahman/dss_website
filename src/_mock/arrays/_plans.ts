@@ -1,7 +1,5 @@
 // ----------------------------------------------------------------------
 
-const LICENSES = ['Essential', 'Enhanced', 'Ultimate'];
-
 export const _homePlans = [
   {
     license: 'Essential',

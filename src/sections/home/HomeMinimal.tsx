@@ -11,9 +11,9 @@ import { MotionViewport, varFade } from '../../components/animate';
 const CARDS = [
   {
     icon: '/assets/icons/home/ic_make_brand.svg',
-    title: 'WordPress Branding',
+    title: 'Custom Web Development',
     description:
-      'Establish a unique online identity with our specialized WordPress design and development services.',
+      'Craft a distinctive online brand with our expert web design and development services, tailored to your unique vision and requirements.',
   },
   {
     icon: '/assets/icons/home/ic_design.svg',

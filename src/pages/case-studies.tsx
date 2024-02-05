@@ -1,11 +1,9 @@
 // next
 import Head from 'next/head';
-// @mui
-import { Container, Box } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { CareerHero, CareerList } from '../sections/career';
+import { Case, CaseCard, CaseHero } from 'src/sections/case';
 
 // ----------------------------------------------------------------------
 
@@ -20,13 +18,11 @@ export default function CaseStudy() {
         <title> Case Study | Devsite Studio</title>
       </Head>
 
-      <CareerHero />
+      <CaseHero />
 
-      <Container sx={{ py: 10 }}>
-        <Box gap={10} display="grid">
-          <CareerList />
-        </Box>
-      </Container>
+      <Case />
+
+      <CaseCard />
     </>
   );
 }

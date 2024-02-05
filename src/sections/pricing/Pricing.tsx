@@ -12,6 +12,7 @@ import {
   Container,
   Typography,
   StackProps,
+  Grid,
 } from '@mui/material';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
@@ -21,6 +22,7 @@ import Iconify from '../../components/iconify';
 import { varFade, MotionViewport } from '../../components/animate';
 import { PATH_PAGE } from 'src/routes/paths';
 import { _homePlans } from 'src/_mock/arrays';
+import PricingQuote from './PricingQuote';
 
 // ----------------------------------------------------------------------
 
@@ -34,7 +36,7 @@ const StyledRoot = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function HomePricingPlans() {
+export default function Pricing() {
   return (
     <StyledRoot>
       <Container component={MotionViewport}>
@@ -113,6 +115,48 @@ function Content() {
   return (
     <>
       {isDesktop ? desktopList : mobileList}
+
+      <m.div variants={varFade().inDown}>
+        <Box
+          sx={{
+            p: 5,
+            mt: 10,
+            mb: 5,
+            borderRadius: 2,
+            border: (theme) => `dashed 1px ${theme.palette.divider}`,
+          }}
+        >
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={6}>
+              <Box sx={{ position: 'relative', mb: 5 }}>
+                <m.div variants={varFade().inUp}>
+                  <Typography variant="h4">Need a custom solution ?</Typography>
+                </m.div>
+                <Box
+                  sx={{
+                    left: 0,
+                    bottom: 4,
+                    width: 40,
+                    height: 8,
+                    opacity: 0.48,
+                    bgcolor: 'info.main',
+                    position: 'absolute',
+                  }}
+                />
+              </Box>
+              {custom.map((option) => (
+                <Stack key={option} spacing={1} direction="row" alignItems="center">
+                  <Iconify icon="eva:checkmark-fill" width={16} />
+                  <Typography variant="body2">{option}</Typography>
+                </Stack>
+              ))}
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <PricingQuote />
+            </Grid>
+          </Grid>
+        </Box>
+      </m.div>
 
       <m.div variants={varFade().in}>
         <Box
@@ -279,3 +323,9 @@ function PlanCard({ plan, sx, ...other }: PlanCardProps) {
     </Stack>
   );
 }
+
+const custom = [
+  'Customized features based on your needs',
+  'Flexible pricing depending on requirements',
+  'Get in touch for a personalized quote',
+];

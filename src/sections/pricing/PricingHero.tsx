@@ -1,16 +1,15 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Stack, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Stack, Container, Typography, Grid } from '@mui/material';
+//
 import { TextAnimate, MotionContainer, varFade } from '../../components/animate';
-
-// ----------------------------------------------------------------------
 
 const StyledRoot = styled('div')(({ theme }) => ({
   position: 'relative',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  backgroundImage: 'url(/assets/background/overlay_1.svg), url(/assets/images/career/hero.jpg)',
+  backgroundImage: 'url(/assets/background/overlay_1.svg), url(/assets/images/meeting/hero.jpg)',
   padding: theme.spacing(10, 0),
   [theme.breakpoints.up('md')]: {
     height: 560,
@@ -27,29 +26,17 @@ const StyledContent = styled('div')(({ theme }) => ({
   },
 }));
 
-// ----------------------------------------------------------------------
-
-export default function CareerHero() {
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-
+export default function PricingHero() {
   return (
     <StyledRoot>
       <Container component={MotionContainer}>
         <StyledContent>
-          <TextAnimate
-            text="Explore"
-            sx={{
-              color: 'primary.main',
-            }}
-            variants={varFade().inRight}
-          />
-
+          <TextAnimate text="Pricing" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
 
           <Stack spacing={2} display="inline-flex" direction="row" sx={{ color: 'common.white' }}>
-            <TextAnimate text="Career" />
-            <TextAnimate text="Opportunities" />
+            <TextAnimate text="Plans" />
+            <TextAnimate text="Options" />
           </Stack>
 
           <m.div variants={varFade().inRight}>
@@ -61,8 +48,8 @@ export default function CareerHero() {
                 fontWeight: 'fontWeightMedium',
               }}
             >
-              Join us as the trusted expert for <br />
-              Top brands, venues, and entertainers.
+              Choose the perfect plan for your needs.
+              <br /> Always flexible to grow
             </Typography>
           </m.div>
         </StyledContent>
