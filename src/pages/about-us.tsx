@@ -1,7 +1,7 @@
 // next
 import Head from 'next/head';
 // @mui
-import { Divider } from '@mui/material';
+import { Box, Container, Divider } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
@@ -13,6 +13,7 @@ import {
   AboutTestimonials,
   TeamMember,
 } from '../sections/about';
+import { ContactForm } from 'src/sections/contact';
 
 // ----------------------------------------------------------------------
 
@@ -36,6 +37,19 @@ export default function AboutPage() {
       <AboutVision />
 
       <AboutTestimonials />
+
+      <Container sx={{ py: 10 }}>
+        <Box
+          gap={10}
+          display="grid"
+          gridTemplateColumns={{
+            xs: 'repeat(1, 1fr)',
+            md: 'repeat(2, 1fr)',
+          }}
+        >
+          <ContactForm />
+        </Box>
+      </Container>
     </>
   );
 }

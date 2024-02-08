@@ -3,8 +3,10 @@ import Head from 'next/head';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { Case, CaseCard, CaseHero } from 'src/sections/case';
+import { Case, CaseHero } from 'src/sections/case';
 import { AboutTestimonials } from 'src/sections/about';
+import { Container, Box } from '@mui/material';
+import { ContactForm } from 'src/sections/contact';
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +26,19 @@ export default function CaseStudy() {
       <Case />
 
       <AboutTestimonials />
+
+      <Container sx={{ py: 10 }}>
+        <Box
+          gap={10}
+          display="grid"
+          gridTemplateColumns={{
+            xs: 'repeat(1, 1fr)',
+            md: 'repeat(2, 1fr)',
+          }}
+        >
+          <ContactForm />
+        </Box>
+      </Container>
     </>
   );
 }

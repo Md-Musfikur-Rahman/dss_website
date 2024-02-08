@@ -6,6 +6,7 @@ import { Container, Box } from '@mui/material';
 import MainLayout from '../layouts/main';
 // sections
 import { Benifits, CareerHero, CareerList } from '../sections/career';
+import { ContactForm } from 'src/sections/contact';
 
 // ----------------------------------------------------------------------
 
@@ -26,6 +27,8 @@ export default function ContactPage() {
         <Box gap={10} display="grid">
           <CareerList />
           {/* <Benifits /> */}
+
+          <ContactForm />
         </Box>
       </Container>
     </>

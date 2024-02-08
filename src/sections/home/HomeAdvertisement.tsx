@@ -77,7 +77,7 @@ function Description() {
               bgcolor: 'common.white',
             }}
           >
-            Purchase Now
+            Pricing
           </Button>
         </m.div>
 
@@ -88,7 +88,7 @@ function Description() {
             variant="outlined"
             target="_blank"
             rel="noopener"
-            href={PATH_FREE_VERSION}
+            href={PATH_PAGE.contact}
             endIcon={<Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />}
             sx={{ color: 'common.white', '&:hover': { borderColor: 'currentColor' } }}
           >
