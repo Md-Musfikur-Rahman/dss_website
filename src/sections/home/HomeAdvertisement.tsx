@@ -5,7 +5,7 @@ import { Button, Box, Container, Stack } from '@mui/material';
 // utils
 import { bgGradient } from '../../utils/cssStyles';
 // routes
-import { PATH_FREE_VERSION, PATH_MINIMAL_ON_STORE, PATH_PAGE } from '../../routes/paths';
+import { PATH_PAGE } from '../../routes/paths';
 // components
 import Iconify from '../../components/iconify';
 import Image from '../../components/image';
@@ -88,7 +88,7 @@ function Description() {
             variant="outlined"
             target="_blank"
             rel="noopener"
-            href={PATH_PAGE.contact}
+            href={PATH_PAGE.calendly}
             endIcon={<Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />}
             sx={{ color: 'common.white', '&:hover': { borderColor: 'currentColor' } }}
           >

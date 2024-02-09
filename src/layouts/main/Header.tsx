@@ -50,7 +50,7 @@ export default function Header() {
         <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Logo />
 
-          <Link href={PATH_DOCS.changelog} rel="noopener" underline="none" sx={{ ml: 1 }}>
+          <Link href="/" rel="noopener" underline="none" sx={{ ml: 1 }}>
             <Typography variant="h6">Devsite Studio</Typography>
           </Link>
 

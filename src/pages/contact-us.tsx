@@ -5,7 +5,8 @@ import { Container, Box } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { ContactHero, ContactForm, ContactMap } from '../sections/contact';
+import { ContactHero, ContactForm } from '../sections/contact';
+import { Meeting } from 'src/sections/meeting';
 
 // ----------------------------------------------------------------------
 
@@ -34,6 +35,7 @@ export default function ContactPage() {
           <ContactForm />
 
           {/* <ContactMap mapContact={_mapContact} /> */}
+          <Meeting />
         </Box>
       </Container>
     </>

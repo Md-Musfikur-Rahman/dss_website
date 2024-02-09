@@ -105,7 +105,7 @@ const StyledDescription = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function AboutTestimonials() {
+export default function Testimonials() {
   const isDesktop = useResponsive('up', 'md');
 
   return (

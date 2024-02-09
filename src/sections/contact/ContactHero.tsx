@@ -73,9 +73,7 @@ export default function ContactHero() {
                 key={contact.country}
                 item
                 xs={12}
-                sm={6}
-                md={3}
-                lg={2}
+                sm={12}
                 sx={{
                   pr: {
                     md: 5,
