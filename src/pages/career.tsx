@@ -5,7 +5,7 @@ import { Container, Box } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { Benifits, CareerHero, CareerList } from '../sections/career';
+import { CareerHero, CareerList } from '../sections/career';
 import { ContactForm } from 'src/sections/contact';
 
 // ----------------------------------------------------------------------

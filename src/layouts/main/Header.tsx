@@ -9,7 +9,7 @@ import { bgBlur } from '../../utils/cssStyles';
 // config
 import { HEADER } from '../../config';
 // routes
-import { PATH_DOCS, PATH_PAGE } from '../../routes/paths';
+import { PATH_PAGE } from '../../routes/paths';
 // components
 import Logo from '../../components/logo';
 //
