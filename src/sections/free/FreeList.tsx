@@ -35,70 +35,70 @@ export default function FreeList() {
         <Typography variant="h3">{plan.subscription}</Typography>
       </Stack>
 
-      <Box gap={3} mt={3} display="grid" gridTemplateColumns={{ md: 'repeat(3, 1fr)' }}>
-        <Box></Box>
-        <Card
+      <Card
+        sx={{
+          p: 5,
+          boxShadow: (theme) => theme.customShadows.z24,
+          justifyContent: 'center',
+          justifySelf: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          width: '34%',
+          mx: 'auto',
+        }}
+      >
+        <Typography variant="overline" sx={{ color: 'text.secondary' }}>
+          {plan.subscription}
+        </Typography>
+
+        <Stack spacing={1} direction="row" sx={{ my: 2 }}>
+          <Typography variant="h5">$</Typography>
+          <Typography variant="h2">{plan.price}</Typography>
+        </Stack>
+
+        <Typography
+          variant="caption"
           sx={{
-            p: 5,
-            boxShadow: (theme) => theme.customShadows.z24,
-            justifyContent: 'center',
-            display: 'flex',
-            flexDirection: 'column',
+            color: 'primary.main',
+            textTransform: 'capitalize',
           }}
         >
-          <Typography variant="overline" sx={{ color: 'text.secondary' }}>
-            {plan.subscription}
-          </Typography>
+          {plan.caption}
+        </Typography>
 
-          <Stack spacing={1} direction="row" sx={{ my: 2 }}>
-            <Typography variant="h5">$</Typography>
-            <Typography variant="h2">{plan.price}</Typography>
-          </Stack>
+        <Box sx={{ width: 80, height: 80, mt: 5 }}>
+          <PlanFreeIcon />
+        </Box>
 
-          <Typography
-            variant="caption"
-            sx={{
-              color: 'primary.main',
-              textTransform: 'capitalize',
-            }}
-          >
-            {plan.caption}
-          </Typography>
-
-          <Box sx={{ width: 80, height: 80, mt: 5 }}>
-            <PlanFreeIcon />
-          </Box>
-
-          <Stack component="ul" spacing={2} sx={{ p: 0, my: 5 }}>
-            {plan.lists.map((item) => (
-              <Stack
-                key={item.text}
-                component="li"
-                direction="row"
-                alignItems="center"
-                spacing={1}
+        <Stack component="ul" spacing={2} sx={{ p: 0, my: 5 }}>
+          {plan.lists.map((item) => (
+            <Stack
+              key={item.text}
+              component="li"
+              direction="row"
+              alignItems="center"
+              spacing={1}
+              sx={{
+                typography: 'body2',
+                color: item.isAvailable ? 'text.primary' : 'text.disabled',
+              }}
+            >
+              <Iconify
+                icon={item.isAvailable ? 'eva:checkmark-fill' : 'eva:close-fill'}
+                width={16}
                 sx={{
-                  typography: 'body2',
-                  color: item.isAvailable ? 'text.primary' : 'text.disabled',
+                  color: item.isAvailable ? 'primary.main' : 'inherit',
                 }}
-              >
-                <Iconify
-                  icon={item.isAvailable ? 'eva:checkmark-fill' : 'eva:close-fill'}
-                  width={16}
-                  sx={{
-                    color: item.isAvailable ? 'primary.main' : 'inherit',
-                  }}
-                />
-                <Typography variant="body2">{item.text}</Typography>
-              </Stack>
-            ))}
-          </Stack>
+              />
+              <Typography variant="body2">{item.text}</Typography>
+            </Stack>
+          ))}
+        </Stack>
 
-          <Button fullWidth size="large" variant="contained" href={PATH_PAGE.pricing}>
-            {plan.labelAction}
-          </Button>
-        </Card>
-      </Box>
+        <Button fullWidth size="large" variant="contained" href={PATH_PAGE.pricing}>
+          {plan.labelAction}
+        </Button>
+      </Card>
     </Container>
   );
 }
