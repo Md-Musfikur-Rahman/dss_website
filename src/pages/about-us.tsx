@@ -5,14 +5,7 @@ import { Box, Container, Divider } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import {
-  AboutHero,
-  AboutWhat,
-  AboutTeam,
-  AboutVision,
-  AboutTestimonials,
-  TeamMember,
-} from '../sections/about';
+import { AboutHero, AboutTeam, AboutVision, AboutTestimonials } from '../sections/about';
 import { ContactForm } from 'src/sections/contact';
 
 // ----------------------------------------------------------------------
