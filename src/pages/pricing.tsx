@@ -24,7 +24,6 @@ export default function PricingPage() {
           content="Explore our transparent pricing structure for web development services at Devsite Studio. Discover the right package for your budget and needs."
         />
       </Head>
-
       <PricingHero />
       <Pricing />
     </>

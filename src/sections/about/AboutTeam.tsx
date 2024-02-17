@@ -16,8 +16,11 @@ export default function AboutTeam() {
     <Container component={MotionViewport} sx={{ mt: 10, textAlign: 'center' }}>
       {/* Founders */}
       <m.div variants={varFade().inUp}>
+        <Typography variant="h1" sx={{ my: 3 }}>
+          Meet the Founders
+        </Typography>
         <Typography variant="h3" sx={{ my: 3 }}>
-          Meet the Founders: Driving Success Through Collaboration
+          Driving Success Through Collaboration
         </Typography>
       </m.div>
       <Founders />

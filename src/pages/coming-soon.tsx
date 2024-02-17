@@ -34,7 +34,7 @@ export default function ComingSoonPage() {
         />
       </Head>
 
-      <Typography variant="h3" paragraph>
+      <Typography variant="h1" paragraph>
         Coming Soon!
       </Typography>
 

@@ -53,8 +53,13 @@ function Description() {
   return (
     <Stack spacing={3} sx={{ mb: 10, textAlign: 'center' }}>
       <m.div variants={varFade().inDown}>
-        <Typography variant="h2">
-          The right plan for <br /> your business
+        <Typography variant="h1">The right plan</Typography>
+        <Typography variant="h2">for your business</Typography>
+        <Typography variant="body1" sx={{ my: 2, maxWidth: '75%', mx: 'auto' }}>
+          Finding the right plan for your business is crucial for its success. At Devsite Studio, we
+          understand that every business is unique, with its own set of goals, challenges, and
+          requirements. That's why we offer a range of customizable plans tailored to suit your
+          specific needs.
         </Typography>
       </m.div>
     </Stack>
@@ -174,7 +179,12 @@ function Content() {
 
           <m.div variants={varFade().inDown}>
             <Typography sx={{ mt: 2, mb: 5, color: 'text.secondary' }}>
-              Please describe your case to receive the most accurate advice.
+              Please describe your case in detail to receive the most accurate advice from our
+              experienced team of professionals. Whether you're facing technical challenges, seeking
+              guidance on project management, or looking for strategic insights to grow your
+              business, we're here to help. The more information you provide, the better equipped
+              we'll be to offer tailored solutions that meet your needs and exceed your
+              expectations.
             </Typography>
           </m.div>
 

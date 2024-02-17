@@ -29,7 +29,7 @@ export default function FaqsPage() {
       <Container sx={{ pt: 15, pb: 10, position: 'relative' }}>
         {/* <FaqsCategory /> */}
 
-        <Typography variant="h3" sx={{ mb: 5 }}>
+        <Typography variant="h1" sx={{ mb: 5 }}>
           Frequently asked questions
         </Typography>
 

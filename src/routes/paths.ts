@@ -21,21 +21,20 @@ export const PATH_AUTH = {
 };
 
 export const PATH_PAGE = {
-  comingSoon: '/coming-soon',
-  maintenance: '/maintenance',
-  pricing: '/pricing',
-  payment: '/payment',
-  about: '/about-us',
-  contact: '/contact-us',
-  faqs: '/faqs',
-  page403: '/403',
-  page404: '/404',
-  page500: '/500',
-  components: '/components',
+  comingSoon: '/coming-soon/',
+  maintenance: '/maintenance/',
+  pricing: '/pricing/',
+  payment: '/payment/',
+  about: '/about-us/',
+  contact: '/contact-us/',
+  faqs: '/faqs/',
+  page403: '/403/',
+  page404: '/404/',
+  page500: '/500/',
   career: '/career',
-  calendly: '/calendly',
-  case: '/case-studies',
-  free: '/free-website',
+  calendly: '/contact-us/',
+  case: '/case-studies/',
+  free: '/free-website/',
 };
 
 export const PATH_DASHBOARD = {

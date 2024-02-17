@@ -115,7 +115,7 @@ export default function CareerList() {
     <Container component={MotionViewport}>
       <Stack spacing={3} sx={{ mb: 3, textAlign: 'center' }}>
         <m.div variants={varFade().inDown}>
-          <Typography variant="h2">Open opportunities</Typography>
+          <Typography variant="h1">Open opportunities</Typography>
         </m.div>
       </Stack>
 
