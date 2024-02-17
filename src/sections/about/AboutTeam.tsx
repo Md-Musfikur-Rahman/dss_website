@@ -2,11 +2,10 @@ import { m } from 'framer-motion';
 // @mui
 import { Button, Container, Typography } from '@mui/material';
 // _mock_
-import { _carouselsMembers } from '../../_mock/arrays';
 // components
 import Iconify from '../../components/iconify';
 import { MotionViewport, varFade } from '../../components/animate';
-import { TeamMember, Founders } from './';
+import { TeamMember, Founders } from '.';
 import { PATH_PAGE } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------

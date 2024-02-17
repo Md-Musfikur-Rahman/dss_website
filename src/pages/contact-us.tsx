@@ -33,12 +33,17 @@ export default function ContactPage() {
         </Typography>
 
         <Typography variant="body1" sx={{ maxWidth: '85%' }}>
-          Devsite Studio is committed to providing top-notch web development services tailored to
-          meet your specific needs. Whether you're a small business looking to establish your online
-          presence or a large corporation in need of a website overhaul, we've got you covered. Our
-          team of experienced developers and designers is dedicated to delivering high-quality,
-          responsive websites that not only look great but also perform exceptionally well. Get in
-          touch with us today to kickstart your web development journey with Devsite Studio!
+          Devsite Studio prides itself on its unwavering commitment to delivering exemplary web
+          development services meticulously crafted to suit your individual requirements. Whether
+          you're a burgeoning small business eager to carve out your digital footprint or a seasoned
+          corporate entity seeking a comprehensive website revamp, rest assured, we are fully
+          equipped to meet your needs. Our seasoned team of developers and designers brings a wealth
+          of experience and expertise to the table, dedicated to creating not just visually
+          captivating but also seamlessly functional websites. From intuitive user interfaces to
+          robust backend systems, we ensure that every aspect of your website not only looks
+          impeccable but also performs flawlessly. Take the first step towards realizing your
+          digital ambitions today by reaching out to Devsite Studio and embarking on a
+          transformative web development journey with us!
         </Typography>
 
         <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 20 }} />

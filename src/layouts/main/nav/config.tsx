@@ -27,6 +27,11 @@ const navConfig = [
     icon: <Iconify icon="ic:sharp-search" />,
     path: PATH_PAGE.career,
   },
+  {
+    title: 'Blogs',
+    icon: <Iconify icon="ic:sharp-search" />,
+    path: PATH_PAGE.comingSoon,
+  },
 ];
 
 export default navConfig;

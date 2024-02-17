@@ -34,9 +34,7 @@ export default function ComingSoonPage() {
         />
       </Head>
 
-      <Typography variant="h1" paragraph>
-        Coming Soon!
-      </Typography>
+      <Typography variant="h1">Coming Soon!</Typography>
 
       <Typography sx={{ color: 'text.secondary' }}>
         We are currently working hard on this page!

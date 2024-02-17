@@ -1,7 +1,7 @@
 import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Stack, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Stack, Container, Typography } from '@mui/material';
 import { TextAnimate, MotionContainer, varFade } from '../../components/animate';
 
 // ----------------------------------------------------------------------
@@ -30,9 +30,6 @@ const StyledContent = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function CareerHero() {
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
-
   return (
     <StyledRoot>
       <Container component={MotionContainer}>

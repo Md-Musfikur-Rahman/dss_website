@@ -4,7 +4,7 @@ import { m } from 'framer-motion';
 import { varFade } from 'src/components/animate';
 import MainLayout from '../../layouts/main';
 // sections
-import { AboutWhat } from './';
+import { AboutWhat } from '.';
 
 // ----------------------------------------------------------------------
 
