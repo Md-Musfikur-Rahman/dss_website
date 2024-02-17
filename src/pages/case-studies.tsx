@@ -19,6 +19,7 @@ export default function CaseStudy() {
     <>
       <Head>
         <title> Case Study | Devsite Studio</title>
+        <meta name="description" content="Your meta description goes here." />
       </Head>
 
       <CaseHero />

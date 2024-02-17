@@ -19,6 +19,10 @@ export default function ContactPage() {
     <>
       <Head>
         <title> Career | Devsite Studio</title>
+        <meta
+          name="description"
+          content="Join the innovative team at Devsite Studio. Explore career opportunities and be part of shaping the future of web development."
+        />
       </Head>
 
       <CareerHero />

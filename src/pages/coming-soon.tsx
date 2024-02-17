@@ -28,6 +28,10 @@ export default function ComingSoonPage() {
     <>
       <Head>
         <title> Coming Soon | Devsite Studio</title>
+        <meta
+          name="description"
+          content="Stay tuned for our upcoming free WordPress theme release. Elevate your website with our professionally crafted designs, coming soon from Devsite Studio."
+        />
       </Head>
 
       <Typography variant="h3" paragraph>

@@ -32,7 +32,7 @@ const JobPositions = [
       'Proficiency in HTML, CSS, and JavaScript',
       'Experience with frontend frameworks such as React or Vue.js',
     ],
-    applyLink: '/apply/frontend-developer',
+    applyLink: '/',
   },
   {
     title: 'Digital Marketing Specialist',
@@ -44,7 +44,7 @@ const JobPositions = [
       'Proven experience in digital marketing campaigns',
       'Strong analytical and creative skills',
     ],
-    applyLink: '/apply/digital-marketing-specialist',
+    applyLink: '/',
   },
   {
     title: 'UX/UI Designer',
@@ -56,7 +56,7 @@ const JobPositions = [
       'Proficiency in design tools such as Sketch, Figma, or Adobe XD',
       'Strong understanding of user-centered design principles',
     ],
-    applyLink: '/apply/ux-ui-designer',
+    applyLink: '/',
   },
   {
     title: 'Data Analyst',
@@ -68,7 +68,7 @@ const JobPositions = [
       'Proficiency in SQL and data visualization tools such as Tableau or Power BI',
       'Experience with statistical analysis and hypothesis testing',
     ],
-    applyLink: '/apply/data-analyst',
+    applyLink: '/',
   },
   {
     title: 'WordPress Developer',
@@ -80,7 +80,7 @@ const JobPositions = [
       'Proficiency in PHP, JavaScript, HTML, and CSS',
       'Experience with WordPress theme and plugin development',
     ],
-    applyLink: '/apply/wordpress-developer',
+    applyLink: '/',
   },
   {
     title: 'WordPress Developer Intern',
@@ -92,7 +92,7 @@ const JobPositions = [
       'Basic understanding of WordPress and its ecosystem',
       'Willingness to learn and collaborate with our development team',
     ],
-    applyLink: '/apply/wordpress-developer-intern',
+    applyLink: '/',
   },
   {
     title: 'UI/UX Intern',
@@ -104,7 +104,7 @@ const JobPositions = [
       'Basic understanding of UI/UX design principles',
       'Proficiency in design tools such as Sketch, Figma, or Adobe XD',
     ],
-    applyLink: '/apply/ui-ux-intern',
+    applyLink: '/',
   },
 ];
 

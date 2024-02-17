@@ -19,6 +19,10 @@ export default function ContactPage() {
     <>
       <Head>
         <title> Contact us | Devsite Studio</title>
+        <meta
+          name="description"
+          content="Get in touch with Devsite Studio to start your web development journey. Reach out for inquiries, support, or to schedule a consultation."
+        />
       </Head>
 
       <ContactHero />

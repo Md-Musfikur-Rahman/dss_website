@@ -11,6 +11,10 @@ export default function Calendly() {
     <>
       <Head>
         <title> Get started | Devsite Studio</title>
+        <meta
+          name="description"
+          content="Schedule a meeting with Devsite Studio to discuss your project requirements. Let's collaborate and bring your vision to life."
+        />
       </Head>
       <MeetingHero />
       <Container sx={{ py: 10 }}>

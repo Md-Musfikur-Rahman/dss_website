@@ -1,13 +1,12 @@
 // next
 import Head from 'next/head';
 // _mock_
-import { _pricingPlans } from '../_mock/arrays';
+
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { Container } from '@mui/material';
+
 import { Pricing, PricingHero } from 'src/sections/pricing';
-import { MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 
@@ -20,6 +19,10 @@ export default function PricingPage() {
     <>
       <Head>
         <title> Pricing | Devsite Studio</title>
+        <meta
+          name="description"
+          content="Explore our transparent pricing structure for web development services at Devsite Studio. Discover the right package for your budget and needs."
+        />
       </Head>
 
       <PricingHero />

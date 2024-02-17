@@ -1,9 +1,8 @@
 import { m } from 'framer-motion';
 // @mui
-import { styled, alpha } from '@mui/material/styles';
-import { Container, InputAdornment, Stack, TextField, Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Container, Stack, Typography } from '@mui/material';
 // components
-import Iconify from '../../components/iconify';
 import { MotionContainer, TextAnimate, varFade } from '../../components/animate';
 
 // ----------------------------------------------------------------------

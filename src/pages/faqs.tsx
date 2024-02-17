@@ -5,7 +5,7 @@ import { Box, Container, Typography } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import { FaqsHero, FaqsCategory, FaqsList, FaqsForm } from '../sections/faqs';
+import { FaqsHero, FaqsList, FaqsForm } from '../sections/faqs';
 
 // ----------------------------------------------------------------------
 
@@ -18,6 +18,10 @@ export default function FaqsPage() {
     <>
       <Head>
         <title> Faqs | Devsite Studio</title>
+        <meta
+          name="description"
+          content="Find answers to commonly asked questions about Devsite Studio's services, processes, and more. Get the information you need to make informed decisions."
+        />
       </Head>
 
       <FaqsHero />

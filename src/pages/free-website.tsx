@@ -10,6 +10,10 @@ export default function FreeWebsite() {
     <>
       <Head>
         <title> Get Website | Devsite Studio</title>
+        <meta
+          name="description"
+          content="For a limited time, Devsite Studio is offering free website development. Don't miss this opportunity to establish your online presence without breaking the bank."
+        />
       </Head>
       <FreeHero />
 

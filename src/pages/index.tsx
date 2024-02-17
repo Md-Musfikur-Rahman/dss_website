@@ -54,6 +54,10 @@ export default function HomePage() {
     <>
       <Head>
         <title>Ignite Your Vision with DEVSITE Studio | Your Web Development Partner</title>
+        <meta
+          name="description"
+          content="Discover the power of seamless web development with Devsite Studio. From WordPress to custom websites, we craft digital experiences that elevate your online presence."
+        />
       </Head>
 
       {progress}
