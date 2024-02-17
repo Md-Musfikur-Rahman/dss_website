@@ -1,7 +1,7 @@
 {
-  "name": "@minimal/material-kit-nextjs",
-  "author": "Minimals UI",
-  "version": "4.0.0",
+  "name": "devsite-studio",
+  "author": "Md Musfikur Rahman",
+  "version": "0.0.0",
   "description": "Next.Js & Typescript",
   "private": true,
   "scripts": {
@@ -40,8 +40,6 @@
     "@next/third-parties": "^14.1.0",
     "@react-pdf/renderer": "^3.0.0",
     "@reduxjs/toolkit": "^1.8.6",
-    "@vercel/analytics": "^1.1.2",
-    "@vercel/speed-insights": "^1.0.10",
     "amazon-cognito-identity-js": "^5.2.11",
     "apexcharts": "^3.36.0",
     "autosuggest-highlight": "^3.3.4",

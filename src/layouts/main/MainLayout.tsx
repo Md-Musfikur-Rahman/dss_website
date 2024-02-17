@@ -1,7 +1,6 @@
 // next
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 // @mui
 import { Box } from '@mui/material';
 //
@@ -33,7 +32,6 @@ export default function MainLayout({ children }: Props) {
         }}
       >
         {children}
-        <SpeedInsights />
       </Box>
 
       <Footer />
