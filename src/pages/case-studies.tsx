@@ -19,7 +19,10 @@ export default function CaseStudy() {
     <>
       <Head>
         <title> Case Study | Devsite Studio</title>
-        <meta name="description" content="Your meta description goes here." />
+        <meta
+          name="description"
+          content="Explore how Devsite Studio turned ambitious concepts into successful digital solutions, delivering innovative designs and cutting-edge development. Learn more about our process, challenges faced, and the remarkable outcomes achieved."
+        />
       </Head>
 
       <CaseHero />

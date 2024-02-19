@@ -1,5 +1,6 @@
 // next
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 // @mui
 import { Box } from '@mui/material';
@@ -20,6 +21,13 @@ export default function MainLayout({ children }: Props) {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: 1 }}>
+      <Head>
+        <title>DEVSITE Studio: Your Vision, Our Web Expertise</title>
+        <meta
+          name="description"
+          content="Discover the power of seamless web development with Devsite Studio. From WordPress to custom websites, we craft digital experiences that elevate your online presence."
+        />
+      </Head>
       <Header />
 
       <Box

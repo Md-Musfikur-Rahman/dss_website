@@ -264,6 +264,7 @@ function Content() {
           animate={{ y: ['0%', '100%'] }}
           transition={transition}
           src={`/assets/images/home/hero_light_1.png`}
+          alt="hero_light_1"
           sx={{ position: 'absolute' }}
         />
         <Box
@@ -271,6 +272,7 @@ function Content() {
           animate={{ y: ['-100%', '0%'] }}
           transition={transition}
           src={`/assets/images/home/hero_light_1.png`}
+          alt="hero_light_1"
           sx={{ position: 'absolute' }}
         />
       </Stack>
@@ -285,6 +287,7 @@ function Content() {
           animate={{ y: ['100%', '0%'] }}
           transition={transition}
           src={`/assets/images/home/hero_light_2.png`}
+          alt="hero_light_2"
           sx={{ position: 'absolute' }}
         />
         <Box
@@ -292,6 +295,7 @@ function Content() {
           animate={{ y: ['0%', '-100%'] }}
           transition={transition}
           src={`/assets/images/home/hero_light_2.png`}
+          alt="hero_light_2"
           sx={{ position: 'absolute' }}
         />
       </Stack>
