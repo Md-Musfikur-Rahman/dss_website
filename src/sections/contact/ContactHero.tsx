@@ -11,7 +11,6 @@ const CONTACTS = [
   {
     country: 'Bangladesh',
     address: 'Maniknagar, Dhaka 1204',
-    phoneNumber: '(+880) 1521-721467',
   },
   // {
   //   country: 'London',
@@ -85,11 +84,9 @@ export default function ContactHero() {
                     {contact.country}
                   </Typography>
                 </m.div>
-
-                <m.div variants={varFade().inRight}>
-                  <Typography variant="body2">
-                    {contact.address}
-                    <br /> {contact.phoneNumber}
+                <m.div variants={varFade().in}>
+                  <Typography variant="h6" paragraph>
+                    Jatrabari, Dhaka-1203
                   </Typography>
                 </m.div>
               </Grid>
