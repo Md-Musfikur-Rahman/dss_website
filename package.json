@@ -2,7 +2,7 @@
   "name": "devsite-studio",
   "author": "Md Musfikur Rahman",
   "version": "0.0.0",
-  "description": "Next.Js & Typescript",
+  "description": "Discover the power of seamless web development with Devsite Studio. From WordPress to custom websites, we craft digital experiences that elevate your online presence.",
   "private": true,
   "scripts": {
     "lint": "next lint",
@@ -46,6 +46,7 @@
     "axios": "^1.1.2",
     "change-case": "^4.1.2",
     "date-fns": "^2.29.3",
+    "depcheck": "^1.4.7",
     "firebase": "^9.12.1",
     "framer-motion": "^7.5.3",
     "highlight.js": "^11.6.0",

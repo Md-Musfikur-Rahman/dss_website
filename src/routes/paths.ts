@@ -34,7 +34,7 @@ export const PATH_PAGE = {
   career: '/career/',
   calendly: '/contact-us/',
   case: '/case-studies/',
-  free: '/free-website/',
+  free: '/403/',
 };
 
 export const PATH_DASHBOARD = {
