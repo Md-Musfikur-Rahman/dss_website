@@ -63,7 +63,7 @@ export const _homePlans = [
 export const _pricingPlans = [
   {
     subscription: 'Essential',
-    price: 399,
+    price: 299,
     caption: 'one-time payment',
     lists: [
       { text: 'Custom WordPress Website with up to 5 pages', isAvailable: true },
@@ -76,7 +76,7 @@ export const _pricingPlans = [
   },
   {
     subscription: 'Enhanced',
-    price: 799,
+    price: 599,
     caption: 'one-time payment',
     lists: [
       { text: 'Everything in Essential Package', isAvailable: true },
@@ -89,7 +89,7 @@ export const _pricingPlans = [
   },
   {
     subscription: 'Ultimate',
-    price: 1499,
+    price: 999,
     caption: 'one-time payment',
     lists: [
       { text: 'Everything in Enhanced Package', isAvailable: true },
