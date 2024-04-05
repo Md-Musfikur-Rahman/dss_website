@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { MotionViewport, varFade } from 'src/components/animate';
 import useResponsive from '../../hooks/useResponsive';
 import CaseCard from './CaseCard';
+import { ImageDescription } from '.';
 
 export default function Case() {
   const isDesktop = useResponsive('up', 'md');
@@ -24,7 +25,17 @@ export default function Case() {
         </m.div>
       </Stack>
 
-      <m.div variants={varFade().in}>
+      {_casesss.map((cases, i) => (
+        <ImageDescription
+          key={i}
+          imgUrl={cases.imgUrl}
+          description={cases.description}
+          title={cases.titlel}
+          noPage={cases.noPage}
+        />
+      ))}
+
+      {/* <m.div variants={varFade().in}>
         <Stack
           sx={{ mt: 10, mx: 'auto' }}
           direction={isDesktop ? 'row' : 'column'}
@@ -35,7 +46,7 @@ export default function Case() {
             <CaseCard key={i} {...cases} index={i} active={active} handleClick={setActive} />
           ))}
         </Stack>
-      </m.div>
+      </m.div> */}
     </Container>
   );
 }
@@ -67,5 +78,36 @@ const _cases = [
     id: 'world-5',
     imgUrl: '/assets/images/case/shirt.png',
     title: 'T-shirt Design',
+  },
+];
+
+const _casesss = [
+  {
+    imgUrl: '/assets/images/case/car.jpeg',
+    titlel: 'Car Hub',
+    noPage: 5,
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat sint laudantium alias fugit voluptates consequuntur corporis dolores ipsam eaque iure quas, distinctio accusantium delectus sed beatae consequatur cumque officiis facilis. ',
+  },
+  {
+    imgUrl: '/assets/images/case/gericht.jpeg',
+    titlel: 'Gericht',
+    noPage: 5,
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat sint laudantium alias fugit voluptates consequuntur corporis dolores ipsam eaque iure quas, distinctio accusantium delectus sed beatae consequatur cumque officiis facilis.',
+  },
+  {
+    imgUrl: '/assets/images/case/gym.jpeg',
+    titlel: 'Golds Gym',
+    noPage: 5,
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat sint laudantium alias fugit voluptates consequuntur corporis dolores ipsam eaque iure quas, distinctio accusantium delectus sed beatae consequatur cumque officiis facilis.',
+  },
+  {
+    imgUrl: '/assets/images/case/nike.png',
+    titlel: 'Nike Shows',
+    noPage: 5,
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat sint laudantium alias fugit voluptates consequuntur corporis dolores ipsam eaque iure quas, distinctio accusantium delectus sed beatae consequatur cumque officiis facilis.',
   },
 ];

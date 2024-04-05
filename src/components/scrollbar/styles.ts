@@ -17,7 +17,7 @@ export const StyledScrollbar = styled(SimpleBar)(({ theme }) => ({
       backgroundColor: alpha(theme.palette.grey[600], 0.48),
     },
     '&.simplebar-visible:before': {
-      opacity: 1,
+      opacity: 0,
     },
   },
   '& .simplebar-track.simplebar-vertical': {
