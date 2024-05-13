@@ -60,42 +60,42 @@ export default function Founders() {
 //------------------------------------------------------------------
 
 const _carouselsMembers = [
-  // {
-  //   id: '001',
-  //   name: 'Md Musfikur Rahman',
-  //   role: 'Founder & CTO',
-  //   avatar: `/assets/images/portraits/musfik.png`,
-  //   _socials: [
-  //     {
-  //       value: 'facebook',
-  //       name: 'FaceBook',
-  //       icon: 'eva:facebook-fill',
-  //       color: '#1877F2',
-  //       path: 'https://www.facebook.com/mdmusfikurrahman23',
-  //     },
-  //     {
-  //       value: 'instagram',
-  //       name: 'Instagram',
-  //       icon: 'ant-design:instagram-filled',
-  //       color: '#E02D69',
-  //       path: 'https://www.instagram.com/mdmusfikurrahman23',
-  //     },
-  //     {
-  //       value: 'linkedin',
-  //       name: 'Linkedin',
-  //       icon: 'eva:linkedin-fill',
-  //       color: '#007EBB',
-  //       path: 'https://www.linkedin.com/in/mdmusfikurrahman',
-  //     },
-  //     {
-  //       value: 'github',
-  //       name: 'GitHub',
-  //       icon: 'eva:github-fill',
-  //       color: '#FFFFF',
-  //       path: 'https://github.com/md-musfikur-rahman',
-  //     },
-  //   ],
-  // },
+  {
+    id: '001',
+    name: 'Md Musfikur Rahman',
+    role: 'Founder & CTO',
+    avatar: `/assets/images/portraits/musfik.png`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://www.facebook.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/mdmusfikurrahman23',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/mdmusfikurrahman',
+      },
+      {
+        value: 'github',
+        name: 'GitHub',
+        icon: 'eva:github-fill',
+        color: '#FFFFF',
+        path: 'https://github.com/md-musfikur-rahman',
+      },
+    ],
+  },
   {
     id: '002',
     name: 'Ali Ahsan Md Muzahid',
