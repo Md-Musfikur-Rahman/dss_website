@@ -63,7 +63,7 @@ const _carouselsMembers = [
   {
     id: '001',
     name: 'Md Musfikur Rahman',
-    role: 'Founder & CTO',
+    role: 'CTO',
     avatar: `/assets/images/portraits/musfik.png`,
     _socials: [
       {
@@ -99,7 +99,7 @@ const _carouselsMembers = [
   {
     id: '002',
     name: 'Ali Ahsan Md Muzahid',
-    role: 'Founder & CEO',
+    role: 'CEO',
     avatar: `/assets/images/portraits/muzahid.png`,
     _socials: [
       {

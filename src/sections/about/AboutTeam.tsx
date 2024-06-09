@@ -16,7 +16,7 @@ export default function AboutTeam() {
       {/* Founders */}
       <m.div variants={varFade().inUp}>
         <Typography variant="h1" sx={{ my: 3 }}>
-          Meet the Founders
+          Meet the Leaders
         </Typography>
         <Typography variant="h3" sx={{ my: 3 }}>
           Driving Success Through Collaboration
