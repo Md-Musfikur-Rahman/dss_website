@@ -134,7 +134,7 @@ const _carouselsMembers = [
         name: 'Linkedin',
         icon: 'eva:linkedin-fill',
         color: '#007EBB',
-        path: 'https://www.linkedin.com/in/devsitestudio',
+        path: 'https://www.linkedin.com/in/thsvo/',
       },
       {
         value: 'twitter',
