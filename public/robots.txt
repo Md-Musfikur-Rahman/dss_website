@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wropseo.com
+Host: https://devsitestudio.com
 
 # Sitemaps
-Sitemap: https://wropseo.com/sitemap.xml
+Sitemap: https://devsitestudio.com/sitemap.xml
