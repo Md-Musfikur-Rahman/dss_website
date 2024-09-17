@@ -1,8 +1,8 @@
 {
-  "name": "devsite-studio",
+  "name": "wropseo",
   "author": "Md Musfikur Rahman",
   "version": "0.0.0",
-  "description": "Discover the power of seamless web development with Devsite Studio. From WordPress to custom websites, we craft digital experiences that elevate your online presence.",
+  "description": "Discover the power of seamless web development with Wropseo. From WordPress to custom websites, we craft digital experiences that elevate your online presence.",
   "private": true,
   "scripts": {
     "lint": "next lint",

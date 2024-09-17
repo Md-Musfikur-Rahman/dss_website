@@ -1,7 +1,7 @@
 // next-sitemap.js
 
 module.exports = {
-  siteUrl: 'https://devsitestudio.com',
+  siteUrl: 'https://wropseo.com',
   generateRobotsTxt: true,
   exclude: ['/admin'],
 };
