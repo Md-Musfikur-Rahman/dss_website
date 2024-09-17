@@ -21,7 +21,7 @@ export default function PaymentPage() {
   return (
     <>
       <Head>
-        <title> Payment | Devsite Studio</title>
+        <title> Payment | Wropseo </title>
       </Head>
 
       <Container

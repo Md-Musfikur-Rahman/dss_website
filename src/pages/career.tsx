@@ -18,10 +18,10 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title> Career | Devsite Studio</title>
+        <title> Career | Wropseo </title>
         <meta
           name="description"
-          content="Join the innovative team at Devsite Studio. Explore career opportunities and be part of shaping the future of web development."
+          content="Join the innovative team at Wropseo. Explore career opportunities and be part of shaping the future of web development."
         />
       </Head>
 

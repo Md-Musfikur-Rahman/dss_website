@@ -34,7 +34,7 @@ const LINKS = [
   {
     headline: 'Contact',
     children: [
-      { name: 'devsitestudio@gmail.com', href: 'mailto:devsitestudio@gmail.com' },
+      { name: 'info@wropseo.com', href: 'mailto:info@wropseo.com' },
       { name: 'Dhaka 1203, Bangladesh', href: '#' },
     ],
   },

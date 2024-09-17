@@ -18,10 +18,10 @@ export default function AboutPage() {
   return (
     <>
       <Head>
-        <title> About us | Devsite Studio</title>
+        <title> About us | Wropseo </title>
         <meta
           name="description"
-          content="Learn about the team behind Devsite Studio and our passion for creating stunning websites. Find out how we can help your business or individual project thrive online."
+          content="Learn about the team behind Wropseo and our passion for creating stunning websites. Find out how we can help your business or individual project thrive online."
         />
       </Head>
 

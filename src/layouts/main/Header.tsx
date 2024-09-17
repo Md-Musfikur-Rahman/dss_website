@@ -51,7 +51,7 @@ export default function Header() {
           <Logo />
 
           <Link href="/" rel="noopener" underline="none" sx={{ ml: 1 }}>
-            <Typography variant="h6">Devsite Studio</Typography>
+            <Typography variant="h6">Wropseo</Typography>
           </Link>
 
           <Box sx={{ flexGrow: 1 }} />

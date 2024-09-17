@@ -9,10 +9,10 @@ export default function FreeWebsite() {
   return (
     <>
       <Head>
-        <title> Get Website | Devsite Studio</title>
+        <title> Get Website | Wropseo</title>
         <meta
           name="description"
-          content="For a limited time, Devsite Studio is offering free website development. Don't miss this opportunity to establish your online presence without breaking the bank."
+          content="For a limited time, Wropseo is offering free website development. Don't miss this opportunity to establish your online presence without breaking the bank."
         />
       </Head>
       <FreeHero />
@@ -23,7 +23,7 @@ export default function FreeWebsite() {
         </Typography>
 
         <Typography variant="body1" sx={{ my: 3, maxWidth: '85%' }}>
-          Devsite Studio is excited to announce a special promotion for a limited time only! We are
+          Wropseo is excited to announce a special promotion for a limited time only! We are
           offering free website development services to help you kickstart your online presence
           without any upfront costs. Whether you're a small business, a startup, or an individual
           looking to showcase your work, this is the perfect opportunity to get a professional
@@ -43,9 +43,9 @@ export default function FreeWebsite() {
         </Box>
 
         <Typography variant="body1" sx={{ my: 3, maxWidth: '85%' }}>
-          Don't miss out on this incredible offer from Devsite Studio. Take advantage of our
-          expertise and creativity to bring your ideas to life on the web. Contact us today to learn
-          more about how you can get started with your free website development project!
+          Don't miss out on this incredible offer from Wropseo. Take advantage of our expertise and
+          creativity to bring your ideas to life on the web. Contact us today to learn more about
+          how you can get started with your free website development project!
         </Typography>
       </Container>
     </>

@@ -27,10 +27,10 @@ export default function ComingSoonPage() {
   return (
     <>
       <Head>
-        <title> Coming Soon | Devsite Studio</title>
+        <title> Coming Soon | Wropseo </title>
         <meta
           name="description"
-          content="Stay tuned for our upcoming free WordPress theme release. Elevate your website with our professionally crafted designs, coming soon from Devsite Studio."
+          content="Stay tuned for our upcoming free WordPress theme release. Elevate your website with our professionally crafted designs, coming soon from Wropseo."
         />
       </Head>
 

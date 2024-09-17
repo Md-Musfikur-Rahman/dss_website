@@ -17,10 +17,10 @@ export default function FaqsPage() {
   return (
     <>
       <Head>
-        <title> Faqs | Devsite Studio</title>
+        <title> Faqs | Wropseo</title>
         <meta
           name="description"
-          content="Find answers to commonly asked questions about Devsite Studio's services, processes, and more. Get the information you need to make informed decisions."
+          content="Find answers to commonly asked questions about Wropseo's services, processes, and more. Get the information you need to make informed decisions."
         />
       </Head>
 

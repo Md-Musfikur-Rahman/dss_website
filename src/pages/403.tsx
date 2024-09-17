@@ -21,7 +21,7 @@ export default function Page403() {
   return (
     <>
       <Head>
-        <title> 403 Forbidden | Devsite Studio</title>
+        <title> 403 Forbidden | Wropseo</title>
       </Head>
 
       <MotionContainer>

@@ -51,7 +51,7 @@ export default class MyDocument extends Document {
             name="keywords"
             content="wordpress,react,material,kit,application,dashboard,admin,template"
           />
-          <meta name="author" content="Devsite Studio" />
+          <meta name="author" content="Wropseo" />
         </Head>
 
         <body>

@@ -18,10 +18,10 @@ export default function PricingPage() {
   return (
     <>
       <Head>
-        <title> Pricing | Devsite Studio</title>
+        <title> Pricing | Wropseo </title>
         <meta
           name="description"
-          content="Explore our transparent pricing structure for web development services at Devsite Studio. Discover the right package for your budget and needs."
+          content="Explore our transparent pricing structure for web development services at Wropseo. Discover the right package for your budget and needs."
         />
       </Head>
       <PricingHero />

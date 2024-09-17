@@ -21,7 +21,7 @@ export default function Page404() {
   return (
     <>
       <Head>
-        <title> 404 Page Not Found | Devsite Studio</title>
+        <title> 404 Page Not Found | Wropseo</title>
       </Head>
 
       <MotionContainer>

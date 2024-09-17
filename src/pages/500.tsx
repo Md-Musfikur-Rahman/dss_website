@@ -21,7 +21,7 @@ export default function Page500() {
   return (
     <>
       <Head>
-        <title> 500 Internal Server Error | Devsite Studio</title>
+        <title> 500 Internal Server Error | Wropseo</title>
       </Head>
 
       <MotionContainer>

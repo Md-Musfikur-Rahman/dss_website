@@ -18,7 +18,7 @@ export default function MaintenancePage() {
   return (
     <>
       <Head>
-        <title> Maintenance | Devsite Studio</title>
+        <title> Maintenance | Wropseo </title>
       </Head>
 
       <Stack sx={{ alignItems: 'center' }}>

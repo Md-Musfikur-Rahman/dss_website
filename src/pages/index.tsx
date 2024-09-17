@@ -53,10 +53,10 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>DEVSITE Studio: Your Vision, Our Web Expertise</title>
+        <title>Wropseo : Your Vision, Our Web Expertise</title>
         <meta
           name="description"
-          content="Discover the power of seamless web development with Devsite Studio. From WordPress to custom websites, we craft digital experiences that elevate your online presence."
+          content="Discover the power of seamless web development with Wropseo . From WordPress to custom websites, we craft digital experiences that elevate your online presence."
         />
       </Head>
 
