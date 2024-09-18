@@ -22,7 +22,7 @@ const Logo = forwardRef<HTMLDivElement, LogoProps>(
     const logo = (
       <Box
         component="img"
-        src="/public/assets/images/home/wropseo-logo.png"
+        src="../../../public/assets/images/home/wropseo-logo.png"
         sx={{ width: 40, height: 40, cursor: 'pointer', ...sx }}
       />
     );
