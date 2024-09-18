@@ -101,7 +101,7 @@ export default function AboutWhat() {
           <Grid item xs={12} md={6} lg={5}>
             <m.div variants={varFade().inRight}>
               <Typography variant="h2" sx={{ mb: 3 }}>
-                Who are <br /> Devsite Studio?
+                Who are <br /> Wropseo?
               </Typography>
             </m.div>
 

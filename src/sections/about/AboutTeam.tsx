@@ -44,8 +44,7 @@ export default function AboutTeam() {
             color: 'text.secondary',
           }}
         >
-          At Devsite Studio, expect top-notch support and thorough documentation from our dedicated
-          team.
+          At Wropseo, expect top-notch support and thorough documentation from our dedicated team.
         </Typography>
       </m.div>
 

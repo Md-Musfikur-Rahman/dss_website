@@ -66,7 +66,7 @@ export default function HomeMinimal() {
 
           <m.div variants={varFade().inDown}>
             <Typography variant="h2">
-              Devsite Studio <br /> helps you?
+              Wropseo <br /> helps you?
             </Typography>
           </m.div>
         </Stack>

@@ -56,7 +56,7 @@ function Description() {
         <Typography variant="h1">The right plan</Typography>
         <Typography variant="h2">for your business</Typography>
         <Typography variant="body1" sx={{ my: 2, maxWidth: '75%', mx: 'auto' }}>
-          Finding the right plan for your business is crucial for its success. At Devsite Studio, we
+          Finding the right plan for your business is crucial for its success. At Wropseo, we
           understand that every business is unique, with its own set of goals, challenges, and
           requirements. That's why we offer a range of customizable plans tailored to suit your
           specific needs.

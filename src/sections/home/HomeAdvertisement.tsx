@@ -56,7 +56,7 @@ function Description() {
         sx={{ color: 'common.white', mb: 5, typography: 'h2' }}
       >
         Get started with
-        <br /> Devsite Studio today
+        <br /> Wropseo today
       </Box>
 
       <Stack
