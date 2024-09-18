@@ -61,7 +61,7 @@ export default function Footer() {
         <Logo sx={{ mb: 1, mx: 'auto' }} />
 
         <Typography variant="caption" component="div">
-          © All rights reserved by <Link href="#"> Devsite Studio </Link>
+          © All rights reserved by <Link href="#"> Wropseo </Link>
           <br /> Developed by &nbsp;
           <Link href=""> Md Musfikur Rahman </Link>
         </Typography>
@@ -99,9 +99,8 @@ export default function Footer() {
 
           <Grid item xs={8} md={3}>
             <Typography variant="body2" sx={{ pr: { md: 5 } }}>
-              The foundation for your upcoming project begins with Devsite Studio, leveraging
-              cutting-edge technologies like React.js and WordPress. Tailor it to your unique style
-              with ease.
+              The foundation for your upcoming project begins with Wropseo, leveraging cutting-edge
+              technologies like React.js and WordPress. Tailor it to your unique style with ease.
             </Typography>
 
             <Stack

@@ -167,7 +167,7 @@ function Description() {
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center', maxWidth: '80%', mx: 'auto' }}>
-          Unlock endless possibilities with DevSite Studio
+          Unlock endless possibilities with Wropseo
         </Typography>
       </m.div>
 
