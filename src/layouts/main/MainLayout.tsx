@@ -8,6 +8,7 @@ import { Box } from '@mui/material';
 const Header = dynamic(() => import('./Header'), { ssr: false });
 const Footer = dynamic(() => import('./Footer'), { ssr: false });
 
+import { GoogleAnalytics } from '@next/third-parties/google';
 // ----------------------------------------------------------------------
 
 type Props = {
@@ -22,6 +23,7 @@ export default function MainLayout({ children }: Props) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: 1 }}>
       <Head>
+        <GoogleAnalytics gaId="G-C97VTFNVCS" />
         <title>Wropseo: Your Vision, Our Web Expertise</title>
         <meta
           name="description"
