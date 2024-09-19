@@ -83,7 +83,7 @@ export default function MyApp(props: MyAppProps) {
                       <StyledChart />
                       <ProgressBar />
                       {getLayout(<Component {...pageProps} />)}
-                      <GoogleAnalytics gaId="G-1VSQCZ0XNM" />
+                      <GoogleAnalytics gaId="G-C97VTFNVCS" />
                     </SnackbarProvider>
                   </ThemeLocalization>
                 </ThemeSettings>
