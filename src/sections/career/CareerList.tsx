@@ -126,7 +126,7 @@ export default function CareerList() {
             sx={{ maxWidth: 850, mb: 5, mx: 'auto', textAlign: 'center' }}
           >
             Seize the chance to join our innovative and progressive team. Reach out to us at
-            <span style={{ color: theme.palette.primary.main }}> hr@devsitestudio.com </span>
+            <span style={{ color: theme.palette.primary.main }}> wropseo@gmail.com </span>
             and let's discuss how your skills can fit into our exciting roles. We look forward to
             hearing from you!
           </Typography>
@@ -170,6 +170,7 @@ export default function CareerList() {
               sx={{ my: 2 }}
               variant="contained"
               endIcon={<SendIcon />}
+              disabled
             >
               Apply
             </Button>

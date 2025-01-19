@@ -15,7 +15,7 @@ import Iconify from '../../components/iconify';
 
 const LINKS = [
   {
-    headline: 'Devsite Studio',
+    headline: 'WROPSEO',
     children: [
       { name: 'About us', href: PATH_PAGE.about },
       { name: 'Contact us', href: PATH_PAGE.contact },

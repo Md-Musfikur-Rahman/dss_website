@@ -108,43 +108,6 @@ export default function TeamMember() {
 //----------------------------------------------------------
 
 const _carouselsMembers = [
-  // Tariqul
-  {
-    id: '004',
-    name: 'Tariqul Islam',
-    role: 'Project Manager',
-    avatar: `/assets/images/portraits/tariqul.jpg`,
-    _socials: [
-      {
-        value: 'facebook',
-        name: 'FaceBook',
-        icon: 'eva:facebook-fill',
-        color: '#1877F2',
-        path: 'https://www.facebook.com/devsitestudio',
-      },
-      {
-        value: 'instagram',
-        name: 'Instagram',
-        icon: 'ant-design:instagram-filled',
-        color: '#E02D69',
-        path: 'https://www.instagram.com/devsitestudio',
-      },
-      {
-        value: 'linkedin',
-        name: 'Linkedin',
-        icon: 'eva:linkedin-fill',
-        color: '#007EBB',
-        path: 'https://www.linkedin.com/in/thsvo/',
-      },
-      {
-        value: 'twitter',
-        name: 'Twitter',
-        icon: 'eva:twitter-fill',
-        color: '#00AAEC',
-        path: 'https://www.twitter.com/devsitestudio',
-      },
-    ],
-  },
   // Shakil
   {
     id: '003',
@@ -172,80 +135,6 @@ const _carouselsMembers = [
         icon: 'eva:linkedin-fill',
         color: '#007EBB',
         path: 'https://www.linkedin.com/in/mdmusfikurrahman',
-      },
-      {
-        value: 'twitter',
-        name: 'Twitter',
-        icon: 'eva:twitter-fill',
-        color: '#00AAEC',
-        path: 'https://www.twitter.com/devsitestudio',
-      },
-    ],
-  },
-  // Asikuzzaman
-  {
-    id: '005',
-    name: 'Md Asikuzzaman',
-    role: 'Front-End Expert',
-    avatar: `/assets/images/portraits/asik.jpeg`,
-    _socials: [
-      {
-        value: 'facebook',
-        name: 'FaceBook',
-        icon: 'eva:facebook-fill',
-        color: '#1877F2',
-        path: 'https://www.facebook.com/devsitestudio',
-      },
-      {
-        value: 'instagram',
-        name: 'Instagram',
-        icon: 'ant-design:instagram-filled',
-        color: '#E02D69',
-        path: 'https://www.instagram.com/devsitestudio',
-      },
-      {
-        value: 'linkedin',
-        name: 'Linkedin',
-        icon: 'eva:linkedin-fill',
-        color: '#007EBB',
-        path: 'https://www.linkedin.com/company/devsitestudio',
-      },
-      {
-        value: 'twitter',
-        name: 'Twitter',
-        icon: 'eva:twitter-fill',
-        color: '#00AAEC',
-        path: 'https://www.twitter.com/devsitestudio',
-      },
-    ],
-  },
-  // Miraj
-  {
-    id: '001',
-    name: 'Md Miraj Uddin',
-    role: 'Wordpress Developer',
-    avatar: `/assets/images/portraits/miraz.jpeg`,
-    _socials: [
-      {
-        value: 'facebook',
-        name: 'FaceBook',
-        icon: 'eva:facebook-fill',
-        color: '#1877F2',
-        path: 'https://www.facebook.com/devsitestudio',
-      },
-      {
-        value: 'instagram',
-        name: 'Instagram',
-        icon: 'ant-design:instagram-filled',
-        color: '#E02D69',
-        path: 'https://www.instagram.com/devsitestudio',
-      },
-      {
-        value: 'linkedin',
-        name: 'Linkedin',
-        icon: 'eva:linkedin-fill',
-        color: '#007EBB',
-        path: 'https://www.linkedin.com/in/devsitestudio',
       },
       {
         value: 'twitter',

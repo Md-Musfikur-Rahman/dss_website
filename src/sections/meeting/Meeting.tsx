@@ -22,7 +22,7 @@ export default function Meeting() {
       </m.div>
       <Box
         className="calendly-inline-widget"
-        data-url="https://calendly.com/devsitestudio/client-meeting"
+        data-url="https://calendly.com/wropseo/30min"
         style={{ width: '100%', height: 700 }}
       />
     </Stack>
