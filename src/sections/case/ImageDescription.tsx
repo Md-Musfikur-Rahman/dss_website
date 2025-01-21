@@ -3,19 +3,30 @@ import { Box, Grid, Stack, Typography, Button, Modal, Fade } from '@mui/material
 import Image from 'src/components/image';
 import { m } from 'framer-motion';
 import Scrollbar from 'src/components/scrollbar';
+import Link from 'next/link';
+import { PATH_PAGE } from 'src/routes/paths';
 
 interface ImageDescriptionProps {
-  imgUrl: string;
+  liveURL: string;
   title: string;
   noPage: number;
-  description: string;
+  category: string;
+  challenge: string;
+  solution: string;
+  results: string;
+  clientTestimonial: string;
+  technologiesUsed: string[];
 }
 
 const ImageDescription: React.FC<ImageDescriptionProps> = ({
-  imgUrl,
+  liveURL,
   title,
-  noPage,
-  description,
+  category,
+  challenge,
+  solution,
+  results,
+  clientTestimonial,
+  technologiesUsed,
 }) => {
   const [openModal, setOpenModal] = useState(false); // Modal state
   const [showFullContent, setShowFullContent] = useState(false); // To toggle full content visibility
@@ -83,22 +94,24 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
                 Project Overview
               </Typography>
               <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                <strong>Pages:</strong> {noPage}
+                <strong>Category</strong> {category}
               </Typography>
               <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                <strong>Technologies & Tools:</strong> {noPage}
+                <strong>Technologies & Tools:</strong> {technologiesUsed.join(', ')}
               </Typography>
               <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                <strong>Live Demo Link:</strong> {noPage}
+                <strong>Live Demo Link:</strong>{' '}
+                <a href={liveURL} target="_blank" rel="noopener noreferrer">
+                  {liveURL}
+                </a>
               </Typography>
 
               <Box sx={{ mt: 2 }}>
                 <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                  Description
+                  Challenges Faced
                 </Typography>
-
-                <Typography variant="body2" sx={{ color: 'text.primary', mt: 2 }}>
-                  {description}
+                <Typography variant="body1" sx={{ color: 'text.primary' }}>
+                  {challenge}
                 </Typography>
               </Box>
 
@@ -108,18 +121,7 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
                   Approach and Strategy
                 </Typography>
                 <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                  Our approach combines detailed market research, creative design, and cutting-edge
-                  technology to ensure the best possible results for our clients.
-                </Typography>
-              </Box>
-
-              <Box sx={{ mt: 2 }}>
-                <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                  Challenges Faced
-                </Typography>
-                <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                  During the project, we encountered significant challenges in scaling the product
-                  to handle a high user volume while maintaining performance.
+                  {solution}
                 </Typography>
               </Box>
 
@@ -127,14 +129,14 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
                 <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                   Key Takeaways and Lessons Learned
                 </Typography>
-                <ul>
-                  <li>
-                    Collaboration and effective communication are key to successful project
-                    execution.
-                  </li>
-                  <li>Early identification of potential risks helps mitigate long-term issues.</li>
-                  <li>Data-driven decision-making accelerates business outcomes.</li>
-                </ul>
+                {results}
+              </Box>
+
+              <Box sx={{ mt: 2 }}>
+                <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                  Key Takeaways and Lessons Learned
+                </Typography>
+                {clientTestimonial}
               </Box>
 
               {/* Button to toggle the content */}
@@ -155,7 +157,7 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
           {/* Image Section */}
           <Grid item xs={12} sm={6} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Image
-              src={imgUrl}
+              src={liveURL} // Assuming liveURL is an image URL, replace it if necessary
               alt={title}
               sx={{
                 maxWidth: '100%',
@@ -205,7 +207,7 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
             </Typography>
 
             <Image
-              src={imgUrl}
+              src={liveURL} // Assuming liveURL is an image URL, replace it if necessary
               alt={title}
               sx={{
                 maxWidth: '100%',
@@ -222,59 +224,49 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
               Project Overview
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.primary' }}>
-              <strong>Pages:</strong> {noPage}
+              <strong>Category</strong> {category}
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.primary' }}>
-              <strong>Technologies & Tools:</strong> {noPage}
+              <strong>Technologies & Tools:</strong> {technologiesUsed.join(', ')}
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.primary' }}>
-              <strong>Live Demo Link:</strong> {noPage}
+              <strong>Live Demo Link:</strong>{' '}
+              <a href={liveURL} target="_blank" rel="noopener noreferrer">
+                {liveURL}
+              </a>
             </Typography>
 
-            <Box sx={{ mt: 2 }}>
-              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                Description
-              </Typography>
-
-              <Typography variant="body2" sx={{ color: 'text.primary', mt: 2 }}>
-                {description}
-              </Typography>
-            </Box>
-
-            {/* Approach and Strategy */}
-            <Box sx={{ mt: 2 }}>
-              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                Approach and Strategy
-              </Typography>
-              <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                Our approach combines detailed market research, creative design, and cutting-edge
-                technology to ensure the best possible results for our clients.
-              </Typography>
-            </Box>
-
-            {/* Challenges Faced */}
             <Box sx={{ mt: 2 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                 Challenges Faced
               </Typography>
               <Typography variant="body1" sx={{ color: 'text.primary' }}>
-                During the project, we encountered significant challenges in scaling the product to
-                handle a high user volume while maintaining performance.
+                {challenge}
               </Typography>
             </Box>
 
-            {/* Key Takeaways */}
+            {/* Approaches, Challenges, Key Takeaways */}
             <Box sx={{ mt: 2 }}>
               <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-                Key Takeaways and Lessons Learned
+                Approach and Strategy
               </Typography>
-              <ul>
-                <li>
-                  Collaboration and effective communication are key to successful project execution.
-                </li>
-                <li>Early identification of potential risks helps mitigate long-term issues.</li>
-                <li>Data-driven decision-making accelerates business outcomes.</li>
-              </ul>
+              <Typography variant="body1" sx={{ color: 'text.primary' }}>
+                {solution}
+              </Typography>
+            </Box>
+
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                Key Takeaways
+              </Typography>
+              {results}
+            </Box>
+
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                Lessons Learned
+              </Typography>
+              {clientTestimonial}
             </Box>
 
             <Box sx={{ mt: 4, textAlign: 'center' }}>
@@ -295,12 +287,6 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
                 Start Your Success Journey
               </Button>
             </Box>
-
-            {/* <Box sx={{ textAlign: 'center', mt: 4 }}>
-              <Button variant="contained" color="primary" onClick={handleCloseModal}>
-                Close
-              </Button>
-            </Box> */}
           </Box>
         </Fade>
       </Modal>
@@ -321,9 +307,17 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
                   justifyContent: 'space-between',
                 }}
               >
-                <Typography variant="overline">Explore More Projects</Typography>
+                <Link href={liveURL} target="blank">
+                  <Typography variant="overline" sx={{ cursor: 'pointer' }}>
+                    Explore
+                  </Typography>
+                </Link>
                 <Typography variant="overline">Follow Us</Typography>
-                <Typography variant="overline">Get in Touch</Typography>
+                <Link href={PATH_PAGE.contact}>
+                  <Typography variant="overline" sx={{ cursor: 'pointer' }}>
+                    Get in Touch
+                  </Typography>
+                </Link>
               </Stack>
             </Box>
           </m.div>
