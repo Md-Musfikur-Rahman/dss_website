@@ -1,3 +1,12 @@
-export { default as FreeHero } from './FreeHero';
-export { default as FreeMeet } from './FreeMeet';
-export { default as FreeList } from './FreeList';
+// Export all components from the `free` folder
+export { default as CaseStudy } from './CaseStudy';
+export { default as ClientTestimonials } from './ClientTestimonials';
+export { default as FAQSection } from './FAQSection';
+export { default as HeroSection } from './HeroSection';
+export { default as KeyBenefitsSection } from './KeyBenefitsSection';
+export { default as PrimaryCallToAction } from './PrimaryCTA';
+export { default as ProblemSolutionSection } from './ProblemSolutionSection';
+export { default as TrustIndicatorSection } from './TrustIndicatorSection';
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';
+export { default as PricingSection } from './PricingPlans';
