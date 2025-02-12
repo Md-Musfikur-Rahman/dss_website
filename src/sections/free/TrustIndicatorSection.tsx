@@ -25,7 +25,7 @@ const TrustIndicatorSection = () => {
             color="textSecondary"
             sx={{ mb: 4, maxWidth: 600, mx: 'auto' }}
           >
-            We've helped over 500+ businesses grow with professional websites and increased sales.
+            We've helped over 50+ businesses grow with professional websites and increased sales.
             Join our trusted network today!
           </Typography>
 
@@ -34,7 +34,7 @@ const TrustIndicatorSection = () => {
             {/* Key Statistics */}
             <Grid item xs={12} md={4}>
               <Typography variant="h5" fontWeight="bold" color="primary">
-                500+
+                50+
               </Typography>
               <Typography variant="body2" color="textSecondary">
                 Happy Clients
@@ -62,30 +62,30 @@ const TrustIndicatorSection = () => {
           <Grid container spacing={2} sx={{ mt: 6 }} justifyContent="center">
             <Grid item xs={6} sm={3}>
               <img
-                src="/placeholder-logo1.png"
-                alt="Client Logo 1"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                src="https://aliishba.com/wp-content/uploads/2025/01/aliishba.png"
+                alt="Aliishba"
+                style={{ maxWidth: '50px', height: 'auto' }}
               />
             </Grid>
             <Grid item xs={6} sm={3}>
               <img
-                src="/placeholder-logo2.png"
-                alt="Client Logo 2"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                src="https://mawuacraft.shop/wp-content/uploads/2024/10/logo.jpeg"
+                alt="mawuacraft"
+                style={{ maxWidth: '50px', height: 'auto' }}
               />
             </Grid>
             <Grid item xs={6} sm={3}>
               <img
-                src="/placeholder-logo3.png"
-                alt="Client Logo 3"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                src="https://corporateboxbd.com/wp-content/uploads/2024/05/update-picture.png"
+                alt="corporateboxbd"
+                style={{ maxWidth: '100px', height: 'auto' }}
               />
             </Grid>
             <Grid item xs={6} sm={3}>
               <img
-                src="/placeholder-logo4.png"
-                alt="Client Logo 4"
-                style={{ maxWidth: '100%', height: 'auto' }}
+                src="https://clinicalpharmacycourses.com/wp-content/uploads/2023/09/cropped-pharmacy-academy-logo-clinical-pharmacy-logo-300x300-removebg-preview-1.png"
+                alt="clinicalpharmacycourses"
+                style={{ maxWidth: '60px', height: 'auto' }}
               />
             </Grid>
           </Grid>
