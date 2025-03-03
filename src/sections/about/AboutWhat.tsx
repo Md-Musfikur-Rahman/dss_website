@@ -112,14 +112,13 @@ export default function AboutWhat() {
                     theme.palette.mode === 'light' ? 'text.secondary' : 'common.white',
                 }}
               >
-                Your premier destination for{' '}
-                <span style={{ color: theme.palette.primary.main }}>WordPress expertise</span> and
-                custom web development excellence. With a focus on cutting-edge technologies like{' '}
-                <span style={{ color: theme.palette.primary.main }}>React.js</span> and{' '}
-                <span style={{ color: theme.palette.primary.main }}>Next.js</span>, we streamline
-                setup, offer effortless demo imports, and empower seamless customization. Whether
-                you're refining your WordPress site or crafting a bespoke project, unlock limitless
-                potential with our tailored solutions.
+                Wropseo is a dynamic web development company dedicated to delivering custom
+                solutions that align with your business needs and goals. We work with all platforms,
+                offering flexibility to adapt to your unique requirements and budget. Whether you’re
+                building a brand-new website or enhancing an existing one, we provide tailored
+                strategies that ensure seamless functionality, enhanced user experience, and
+                measurable growth. Our focus is on creating high-quality, scalable web solutions
+                that meet customer demands and drive business success.
               </Typography>
             </m.div>
 
@@ -184,23 +183,23 @@ function ProgressItem({ progress }: ProgressItemProps) {
 
 const _skills = [
   {
-    label: 'WordPress Development',
-    value: 95.5,
+    label: 'Website Development',
+    value: 99.9,
   },
+  // {
+  //   label: 'WordPress Theme Customization',
+  //   value: 90,
+  // },
+  // {
+  //   label: 'WordPress Plugin Development',
+  //   value: 85,
+  // },
   {
-    label: 'WordPress Theme Customization',
+    label: 'UI/UX Design',
     value: 90,
   },
   {
-    label: 'WordPress Plugin Development',
-    value: 85,
-  },
-  {
-    label: 'Development', // Original label, you might want to update this
-    value: 80, // Update value if needed
-  },
-  {
-    label: 'Design', // Original label, you might want to update this
-    value: 70, // Update value if needed
+    label: 'Website SEO',
+    value: 90,
   },
 ];

@@ -58,8 +58,8 @@ export default function Header() {
 
           {isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
 
-          <Button variant="contained" rel="noopener" href={PATH_PAGE.pricing}>
-            Pricing
+          <Button variant="contained" rel="noopener" href={PATH_PAGE.contact}>
+            Contact Us
           </Button>
 
           {!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}

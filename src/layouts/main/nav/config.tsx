@@ -13,7 +13,7 @@ const navConfig = [
     path: '/',
   },
   {
-    title: 'About',
+    title: 'About Us',
     icon: <Iconify icon="ic:round-grain" />,
     path: PATH_PAGE.about,
   },
@@ -27,11 +27,11 @@ const navConfig = [
     icon: <Iconify icon="ic:sharp-search" />,
     path: PATH_PAGE.career,
   },
-  {
-    title: 'Blogs',
-    icon: <Iconify icon="ic:sharp-search" />,
-    path: PATH_PAGE.comingSoon,
-  },
+  // {
+  //   title: 'Blogs',
+  //   icon: <Iconify icon="ic:sharp-search" />,
+  //   path: PATH_PAGE.comingSoon,
+  // },
 ];
 
 export default navConfig;

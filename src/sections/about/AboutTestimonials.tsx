@@ -15,40 +15,40 @@ import { MotionViewport, varFade } from '../../components/animate';
 
 const TESTIMONIALS = [
   {
-    name: 'Jenny Wilson',
+    name: 'Alex Verdieu',
     rating: 5,
-    dateCreate: new Date(),
-    content: `Excellent Work! Thanks a lot!`,
+    date: 'Oct 8, 2024 - Nov 6, 2024',
+    content: `Wix Website Redesign for a Local Beauty Business - "Great man, very helpful and he is willing to go the extra mile."`,
   },
   {
-    name: 'Cody Fisher',
-    rating: 5,
-    dateCreate: new Date(),
-    content: `It's a very good dashboard and we are really liking the product . We've done some things, like migrate to TS and implementing a react useContext api, to fit our job methodology but the product is one of the best in terms of design and application architecture. The team did a really good job.`,
+    name: 'Viziune C',
+    rating: 4.5,
+    date: 'Sep 10, 2024 - Nov 4, 2024',
+    content: `WordPress Tweaks required and updates - "Great man, very helpful and he is willing to go the extra mile."`,
   },
   {
-    name: 'Marvin McKinney',
+    name: 'Paul Walker',
     rating: 5,
-    dateCreate: new Date(),
-    content: `Customer support is realy fast and helpful the desgin of this theme is looks amazing also the code is very clean and readble realy good job !`,
+    date: 'Oct 8, 2024 - Oct 29, 2024',
+    content: `Update WordPress Website pages to match Elementor Page templates - "Excellent service, timely updates, and flawless execution."`,
   },
   {
-    name: 'Darrell Steward',
+    name: 'Keenan Jacobus',
     rating: 5,
-    dateCreate: new Date(),
-    content: `Amazing, really good code quality and gives you a lot of examples for implementations.`,
+    date: 'Aug 31, 2024 - Sep 30, 2024',
+    content: `WordPress Developer Needed to Set Up ACF & Elementor for Bulk Editing and Page Creation - "Highly skilled and efficient. Delivered exactly what was needed."`,
   },
   {
-    name: 'Jacob Jones',
+    name: 'Mahesh Govindraj',
     rating: 5,
-    dateCreate: new Date(),
-    content: `Got a few questions after purchasing the product. The owner responded very fast and very helpfull. Overall the code is excellent and works very good. 5/5 stars!`,
+    date: 'Aug 17, 2024 - Sep 14, 2024',
+    content: `Responsive WordPress Website Development Using Elementor with booking/payment functionality - "Great quality work! Everything works perfectly with seamless functionality."`,
   },
   {
-    name: 'Bessie Cooper',
+    name: 'Dika Oha',
     rating: 5,
-    dateCreate: new Date(),
-    content: `CEO of Codealy.io here. We’ve built a developer assessment platform that makes sense - tasks are based on git repositories and run in virtual machines. We automate the pain points - storing candidates code, running it and sharing test results with the whole team, remotely. Bought this template as we need to provide an awesome dashboard for our early customers. I am super happy with purchase. The code is just as good as the design. Thanks!`,
+    date: 'Aug 31, 2024 - Sep 1, 2024',
+    content: `One page design with Elementor - "I enjoyed working with him. His communication was top-notch, his skills were reasonably strong. I enjoyed working with Musfik and will likely have additional jobs for him in the future."`,
   },
 ];
 
@@ -97,7 +97,7 @@ export default function AboutTestimonials() {
               <m.div variants={varFade().inUp}>
                 <Typography variant="h2" sx={{ mb: 3, color: 'common.white' }}>
                   Who love <br />
-                  my work
+                  our work
                 </Typography>
               </m.div>
 
@@ -149,13 +149,13 @@ export default function AboutTestimonials() {
           </Grid>
         </Grid>
 
-        {isDesktop && (
+        {/* {isDesktop && (
           <Box sx={{ bottom: 60, position: 'absolute' }}>
             <m.div variants={varFade().inLeft}>
               <TestimonialLink />
             </m.div>
           </Box>
-        )}
+        )} */}
       </Container>
     </StyledRoot>
   );
@@ -168,14 +168,14 @@ type TestimonialCardProps = {
     name: string;
     rating: number;
     content: string;
-    dateCreate: Date;
+    date: string;
   };
 };
 
 function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const theme = useTheme();
 
-  const { name, rating, dateCreate, content } = testimonial;
+  const { name, rating, date, content } = testimonial;
 
   return (
     <Paper
@@ -194,7 +194,7 @@ function TestimonialCard({ testimonial }: TestimonialCardProps) {
       </Typography>
 
       <Typography gutterBottom component="div" variant="caption" sx={{ color: 'grey.500' }}>
-        {fDate(dateCreate)}
+        {date}
       </Typography>
 
       <Rating value={rating} readOnly size="small" />

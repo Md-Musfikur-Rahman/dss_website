@@ -55,8 +55,10 @@ function Description() {
         variants={varFade().inDown}
         sx={{ color: 'common.white', mb: 5, typography: 'h2' }}
       >
-        Get started with
-        <br /> Wropseo today
+        {/* Get started with
+        <br /> Wropseo today */}
+        Your Perfect Website <br />
+        Is Just a Click Away!
       </Box>
 
       <Stack
@@ -64,7 +66,7 @@ function Description() {
         justifyContent={{ xs: 'center', md: 'flex-start' }}
         spacing={2}
       >
-        <m.div variants={varFade().inRight}>
+        {/* <m.div variants={varFade().inRight}>
           <Button
             color="inherit"
             size="large"
@@ -79,18 +81,18 @@ function Description() {
           >
             Pricing
           </Button>
-        </m.div>
+        </m.div> */}
 
         <m.div variants={varFade().inRight}>
           <Button
             color="inherit"
             size="large"
-            variant="outlined"
+            variant="contained"
             target="_blank"
             rel="noopener"
             href={PATH_PAGE.calendly}
             endIcon={<Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />}
-            sx={{ color: 'common.white', '&:hover': { borderColor: 'currentColor' } }}
+            sx={{ color: 'currentColor', '&:hover': { borderColor: 'currentColor' } }}
           >
             Get Free Consultation
           </Button>

@@ -147,7 +147,8 @@ function Description() {
     <StyledDescription>
       <m.div variants={varFade().in}>
         <Typography variant={isDesktop ? 'h3' : 'h2'} sx={{ textAlign: 'center' }}>
-          Boost your site with
+          {/* Boost your site with */}
+          We Help You Build
         </Typography>
       </m.div>
 
@@ -161,19 +162,21 @@ function Description() {
             repeat: Infinity,
           }}
         >
-          WordPress Magic
+          {/* WordPress Magic */}
+          Perfect Website
         </StyledGradientText>
       </m.div>
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center', maxWidth: '80%', mx: 'auto' }}>
-          Unlock endless possibilities with Wropseo
+          {/* Unlock endless possibilities with Wropseo */}
+          Expert web development & design services to bring your business online the right way.{' '}
         </Typography>
       </m.div>
 
       <m.div variants={varFade().in}>
-        <Stack spacing={1.5} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 3 }}>
-          <Stack alignItems="center" spacing={2}>
+        <Stack spacing={2} direction={{ xs: 'column-reverse', sm: 'row' }} sx={{ my: 3 }}>
+          <Stack alignItems="center" spacing={3}>
             <NextLink href={PATH_PAGE.contact} passHref>
               <Button
                 color="inherit"
@@ -192,7 +195,7 @@ function Description() {
               </Button>
             </NextLink>
 
-            <Link
+            {/* <Link
               color="inherit"
               variant="caption"
               target="_blank"
@@ -202,10 +205,10 @@ function Description() {
             >
               <Iconify icon="eva:external-link-fill" width={16} sx={{ mr: 0.5 }} />
               Check Our Templates
-            </Link>
+            </Link> */}
           </Stack>
 
-          <Button
+          {/* <Button
             color="inherit"
             size="large"
             variant="outlined"
@@ -216,19 +219,30 @@ function Description() {
             sx={{ borderColor: 'text.primary' }}
           >
             Learn More
-          </Button>
+          </Button> */}
         </Stack>
       </m.div>
 
-      <Stack spacing={3} sx={{ textAlign: 'center', opacity: 0.4 }}>
+      <Stack spacing={3} sx={{ textAlign: 'center' }}>
         <m.div variants={varFade().in}>
-          <Typography variant="overline">Tech Stack</Typography>
+          <Typography variant="overline" sx={{ opacity: 0.4 }}>
+            Tech Stack
+          </Typography>
         </m.div>
 
         <Stack spacing={2} direction="row" justifyContent="center">
-          {['wordpress', 'html', 'css', 'js', 'nextjs'].map((platform) => (
+          {['wordpress', 'shopify', 'wix', 'webflow', 'nextjs'].map((platform) => (
             <m.div key={platform} variants={varFade().in}>
-              <SvgColor src={`/assets/icons/platforms/ic_${platform}.svg`} />
+              <SvgColor
+                src={`/assets/icons/platforms/ic_${platform}.svg`}
+                sx={{
+                  opacity: 0.4,
+                  transition: 'opacity 0.3s', // Smooth transition
+                  '&:hover': {
+                    opacity: 1,
+                  },
+                }}
+              />
             </m.div>
           ))}
         </Stack>

@@ -21,10 +21,10 @@ export default function MainLayout({ children }: Props) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: 1 }}>
       <Head>
-        <title>Wropseo: Your Vision, Our Web Expertise</title>
+        <title>Wropse Professional Web Development Services For SMB</title>
         <meta
           name="description"
-          content="Discover the power of seamless web development with Wropseo. From WordPress to custom websites, we craft digital experiences that elevate your online presence."
+          content="Build your online presence with our expert web development, web design, and SEO services. Get a free domain, hosting, SSL & more – start today!"
         />
       </Head>
       <Header />

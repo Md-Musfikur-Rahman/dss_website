@@ -11,21 +11,21 @@ import { MotionViewport, varFade } from '../../components/animate';
 const CARDS = [
   {
     icon: '/assets/icons/home/ic_make_brand.svg',
-    title: 'Custom Web Development',
+    title: 'Expert Web Development & Design',
     description:
-      'Craft a distinctive online brand with our expert web design and development services, tailored to your unique vision and requirements.',
+      'We create visually appealing, responsive websites tailored to your business needs, ensuring a seamless user experience across all devices.',
   },
   {
     icon: '/assets/icons/home/ic_design.svg',
-    title: 'WordPress Theme Customization',
+    title: 'Complete SEO & Performance Optimization',
     description:
-      'Transform your website with our responsive and user-friendly WordPress themes, tailored to your specific requirements.',
+      'From basic SEO setup to page speed optimization, we ensure your website ranks well on search engines and performs at its best.',
   },
   {
     icon: '/assets/icons/home/ic_development.svg',
-    title: 'WordPress Development Solutions',
+    title: 'Comprehensive Online Presence Management',
     description:
-      'Harness the power of WordPress with our comprehensive development solutions, enabling seamless customization and scalability for your web projects.',
+      'We provide full support with domain and hosting, Google Analytics setup, Google My Business, and social media integration to help you grow and engage your audience.',
   },
 ];
 
