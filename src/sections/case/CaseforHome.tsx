@@ -236,11 +236,10 @@ const CaseforHome: React.FC = () => {
 export default CaseforHome;
 
 // Your projects array remains unchanged; I'll assume it's included above this code.
-
 const projects = [
   {
     liveURL: 'https://www.naespabeauty.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/naespa.jpeg',
     title: 'Naespa Beauty',
     noPage: 0,
     category: 'Wix Website for Beauty Salon',
@@ -256,7 +255,7 @@ const projects = [
   },
   {
     liveURL: 'https://stormrage.nyc/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/stormrage.png',
     title: 'Stormrage',
     noPage: 0,
     category: 'WordPress Site for Marketing Agency',
@@ -272,7 +271,7 @@ const projects = [
   },
   {
     liveURL: 'https://viziuneclara.ro/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/viziuneclara.jpeg',
     title: 'Viziuneclara',
     noPage: 0,
     category: 'WordPress Blog',
@@ -288,7 +287,7 @@ const projects = [
   },
   {
     liveURL: 'https://clinicalpharmacycourses.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/clinicalpharmacycourses.jpeg',
     title: 'Clinical Pharmacy Courses',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Course Selling)',
@@ -304,7 +303,7 @@ const projects = [
   },
   {
     liveURL: 'https://www.teachersocials.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/teachersocials.png',
     title: 'Teacher Socials',
     noPage: 0,
     category: 'WordPress Site for App',
@@ -316,11 +315,11 @@ const projects = [
       "The transition to WordPress improved the site's scalability and flexibility. The multi-step form resulted in a 20% higher conversion rate for consultations.",
     clientTestimonial:
       'We were happy with how smooth the transition was. The new multi-step form is bringing in more leads than we expected!',
-    technologiesUsed: ['WordPress', 'Elementor', 'WPForms'],
+    technologiesUsed: ['Wix', 'Elementor', 'WPForms'],
   },
   {
     liveURL: 'https://gbadunapp.co/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/gbadunapp.png',
     title: 'Gbadun',
     noPage: 0,
     category: 'WordPress Site for App',
@@ -335,8 +334,8 @@ const projects = [
     technologiesUsed: ['WordPress', 'Elementor'],
   },
   {
-    liveURL: 'https://eau.ac/',
-    imgUrl: 'image-link',
+    liveURL: '#',
+    imgUrl: '/assets/images/case/bridge.jpeg',
     title: 'Copy as the Bridge TEFL',
     noPage: 0,
     category: 'WordPress Site for Training Center',
@@ -352,7 +351,7 @@ const projects = [
   },
   {
     liveURL: 'https://perfumehubs.com.au/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/perfumehubs.jpeg',
     title: 'Perfume Hubs',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Perfume)',
@@ -368,7 +367,7 @@ const projects = [
   },
   {
     liveURL: 'https://assistedlivinglocatorslongisland.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/assistedlivinglocatorslongisland.jpeg',
     title: 'Assisted Living Locators Long Island',
     noPage: 0,
     category: 'WordPress Site for Assisted Living Locators',
@@ -384,7 +383,7 @@ const projects = [
   },
   {
     liveURL: 'https://mawuacraft.shop/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/mawuacraft.png',
     title: 'Mawua Craft',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Fashion)',
@@ -399,8 +398,8 @@ const projects = [
     technologiesUsed: ['WordPress', 'WooCommerce', 'Yoast SEO'],
   },
   {
-    liveURL: 'https://pixelfuels.com/',
-    imgUrl: 'image-link',
+    liveURL: '#',
+    imgUrl: '/assets/images/case/PixelFuels.png',
     title: 'Pixel Fuels',
     noPage: 0,
     category: 'WordPress Site for Marketing Agency',
@@ -415,7 +414,7 @@ const projects = [
   },
   {
     liveURL: 'https://uddoktahoi.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/uddoktahoi.jpeg',
     title: 'Uddokta Hoi',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Course Selling)',
@@ -431,7 +430,7 @@ const projects = [
   },
   {
     liveURL: 'https://texortdigital.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/texortdigital.jpeg',
     title: 'Texort Digital',
     noPage: 0,
     category: 'WordPress Site for Marketing Agency',
@@ -446,7 +445,7 @@ const projects = [
   },
   {
     liveURL: 'https://corporateboxbd.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/corporateboxbd.jpeg',
     title: 'Corporate Box',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Corporate Gifts)',

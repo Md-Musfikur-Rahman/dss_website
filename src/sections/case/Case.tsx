@@ -1,67 +1,50 @@
 import { Container, Stack, Typography } from '@mui/material';
 import { m } from 'framer-motion';
-import { useState } from 'react';
 import { MotionViewport, varFade } from 'src/components/animate';
-import useResponsive from '../../hooks/useResponsive';
-import CaseCard from './CaseCard';
 import { ImageDescription } from '.';
 
 export default function Case() {
-  const isDesktop = useResponsive('up', 'md');
-  const [active, setActive] = useState('world-1');
-
   return (
     <Container component={MotionViewport}>
-      <Stack spacing={5} my={10}>
-        <m.div variants={varFade().inUp}>
+      <Stack spacing={5} my={5}>
+        <m.div>
           <Typography variant="h2">Crafting Digital Success Stories</Typography>
         </m.div>
 
-        <m.div variants={varFade().inUp}>
+        <m.div>
           <Typography variant="body1">
-            Explore our successful web development project showcasing innovative solutions and
+            Explore our successful web development projects showcasing innovative solutions and
             cutting-edge technologies.
           </Typography>
         </m.div>
       </Stack>
 
-      {_casesss.map((cases, i) => (
-        <ImageDescription
-          key={i}
-          liveURL={cases.liveURL}
-          title={cases.title}
-          noPage={cases.noPage}
-          category={cases.category}
-          challenge={cases.challenge}
-          solution={cases.solution}
-          results={cases.results}
-          clientTestimonial={cases.clientTestimonial}
-          technologiesUsed={cases.technologiesUsed}
-        />
-      ))}
-
-      {/* <m.div variants={varFade().in}>
-        <Stack
-          sx={{ mt: 10, mx: 'auto' }}
-          direction={isDesktop ? 'row' : 'column'}
-          minHeight="70vh"
-          spacing={5}
-        >
-          {_cases.map((cases, i) => (
-            <CaseCard key={i} {...cases} index={i} active={active} handleClick={setActive} />
-          ))}
-        </Stack>
-      </m.div> */}
+      <Stack>
+        {_casesss.map((cases) => (
+          <ImageDescription
+            key={cases.title} // Using the title as a unique key
+            liveURL={cases.liveURL}
+            title={cases.title}
+            imgUrl={cases.imgUrl} // Ensure you pass imgUrl dynamically
+            noPage={cases.noPage}
+            category={cases.category}
+            challenge={cases.challenge}
+            solution={cases.solution}
+            results={cases.results}
+            clientTestimonial={cases.clientTestimonial}
+            technologiesUsed={cases.technologiesUsed}
+          />
+        ))}{' '}
+      </Stack>
     </Container>
   );
 }
-
 //--------------------------------------------------------
 
 const _casesss = [
   {
     liveURL: 'https://www.naespabeauty.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/naespa.jpeg',
     title: 'Naespa Beauty',
     noPage: 0,
     category: 'Wix Website for Beauty Salon',
@@ -77,7 +60,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://stormrage.nyc/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/stormrage.png',
     title: 'Stormrage',
     noPage: 0,
     category: 'WordPress Site for Marketing Agency',
@@ -93,7 +76,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://viziuneclara.ro/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/viziuneclara.jpeg',
     title: 'Viziuneclara',
     noPage: 0,
     category: 'WordPress Blog',
@@ -109,7 +92,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://clinicalpharmacycourses.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/clinicalpharmacycourses.jpeg',
     title: 'Clinical Pharmacy Courses',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Course Selling)',
@@ -125,7 +108,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://www.teachersocials.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/teachersocials.png',
     title: 'Teacher Socials',
     noPage: 0,
     category: 'WordPress Site for App',
@@ -141,7 +124,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://gbadunapp.co/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/gbadunapp.png',
     title: 'Gbadun',
     noPage: 0,
     category: 'WordPress Site for App',
@@ -156,8 +139,8 @@ const _casesss = [
     technologiesUsed: ['WordPress', 'Elementor'],
   },
   {
-    liveURL: 'https://eau.ac/',
-    imgUrl: 'image-link',
+    liveURL: '#',
+    imgUrl: '/assets/images/case/bridge.jpeg',
     title: 'Copy as the Bridge TEFL',
     noPage: 0,
     category: 'WordPress Site for Training Center',
@@ -173,7 +156,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://perfumehubs.com.au/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/perfumehubs.jpeg',
     title: 'Perfume Hubs',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Perfume)',
@@ -189,7 +172,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://assistedlivinglocatorslongisland.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/assistedlivinglocatorslongisland.jpeg',
     title: 'Assisted Living Locators Long Island',
     noPage: 0,
     category: 'WordPress Site for Assisted Living Locators',
@@ -205,7 +188,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://mawuacraft.shop/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/mawuacraft.png',
     title: 'Mawua Craft',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Fashion)',
@@ -220,8 +203,8 @@ const _casesss = [
     technologiesUsed: ['WordPress', 'WooCommerce', 'Yoast SEO'],
   },
   {
-    liveURL: 'https://pixelfuels.com/',
-    imgUrl: 'image-link',
+    liveURL: '#',
+    imgUrl: '/assets/images/case/PixelFuels.png',
     title: 'Pixel Fuels',
     noPage: 0,
     category: 'WordPress Site for Marketing Agency',
@@ -236,7 +219,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://uddoktahoi.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/uddoktahoi.jpeg',
     title: 'Uddokta Hoi',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Course Selling)',
@@ -252,7 +235,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://texortdigital.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/texortdigital.jpeg',
     title: 'Texort Digital',
     noPage: 0,
     category: 'WordPress Site for Marketing Agency',
@@ -267,7 +250,7 @@ const _casesss = [
   },
   {
     liveURL: 'https://corporateboxbd.com/',
-    imgUrl: 'image-link',
+    imgUrl: '/assets/images/case/corporateboxbd.jpeg',
     title: 'Corporate Box',
     noPage: 0,
     category: 'WordPress, WooCommerce, Ecommerce (Corporate Gifts)',
@@ -280,33 +263,5 @@ const _casesss = [
     clientTestimonial:
       'The new site is fantastic! Bulk pricing and payment integration worked seamlessly, and we’ve had a lot of positive feedback from our customers.',
     technologiesUsed: ['WordPress', 'WooCommerce', 'PHP', 'Stripe'],
-  },
-];
-
-const _cases = [
-  {
-    id: 'world-1',
-    imgUrl: '/assets/images/case/car.jpeg',
-    title: 'Car Hub',
-  },
-  {
-    id: 'world-2',
-    imgUrl: '/assets/images/case/gericht.jpeg',
-    title: 'Gericht',
-  },
-  {
-    id: 'world-3',
-    imgUrl: '/assets/images/case/gym.jpeg',
-    title: 'Golds Gym',
-  },
-  {
-    id: 'world-4',
-    imgUrl: '/assets/images/case/nike.png',
-    title: 'Nike Shows',
-  },
-  {
-    id: 'world-5',
-    imgUrl: '/assets/images/case/shirt.png',
-    title: 'T-shirt Design',
   },
 ];

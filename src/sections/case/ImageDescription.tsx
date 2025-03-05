@@ -16,10 +16,12 @@ interface ImageDescriptionProps {
   results: string;
   clientTestimonial: string;
   technologiesUsed: string[];
+  imgUrl: string;
 }
 
 const ImageDescription: React.FC<ImageDescriptionProps> = ({
   liveURL,
+  imgUrl,
   title,
   category,
   challenge,
@@ -157,7 +159,7 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
           {/* Image Section */}
           <Grid item xs={12} sm={6} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Image
-              src={liveURL} // Assuming liveURL is an image URL, replace it if necessary
+              src={imgUrl} // Assuming liveURL is an image URL, replace it if necessary
               alt={title}
               sx={{
                 maxWidth: '100%',
@@ -207,7 +209,7 @@ const ImageDescription: React.FC<ImageDescriptionProps> = ({
             </Typography>
 
             <Image
-              src={liveURL} // Assuming liveURL is an image URL, replace it if necessary
+              src={imgUrl} // Assuming liveURL is an image URL, replace it if necessary
               alt={title}
               sx={{
                 maxWidth: '100%',
