@@ -1,4 +1,4 @@
-import { Box, Button, Typography, Grid, Container } from '@mui/material';
+import { Button, Typography, Grid } from '@mui/material';
 import { m } from 'framer-motion';
 
 const HeroSection = () => {

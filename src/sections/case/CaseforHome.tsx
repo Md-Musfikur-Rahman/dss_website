@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { styled } from '@mui/material/styles';
-import { MotionViewport, varFade } from '../../components/animate'; // Assuming varFade is available
+import { MotionViewport } from '../../components/animate'; // Assuming varFade is available
 import { Box, Button, Container, Typography, Grid, Stack } from '@mui/material';
 import { m } from 'framer-motion';
 

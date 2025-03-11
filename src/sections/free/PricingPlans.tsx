@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Card, CardContent, Button, Stack } from '@mui/material';
+import { Box, Typography, Grid, Card, CardContent, Button } from '@mui/material';
 import { m } from 'framer-motion';
 
 interface PricingPlanProps {

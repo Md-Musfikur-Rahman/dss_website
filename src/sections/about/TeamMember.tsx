@@ -84,9 +84,8 @@ export default function TeamMember() {
 
                 <Stack direction="row" alignItems="center" justifyContent="center" sx={{ p: 2 }}>
                   {member._socials.map((social) => (
-                    <Link href={social.path} target="_blank">
+                    <Link key={social.name} href={social.path} target="_blank">
                       <IconButton
-                        key={social.name}
                         sx={{
                           color: social.color,
                           '&:hover': {

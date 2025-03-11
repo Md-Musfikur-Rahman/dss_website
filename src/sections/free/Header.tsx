@@ -1,9 +1,7 @@
-import React from 'react';
 import Link from 'next/link';
 import { AppBar, Toolbar, Button, IconButton, Typography, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
-import Logo from 'src/components/logo';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

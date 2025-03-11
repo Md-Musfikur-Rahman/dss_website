@@ -7,13 +7,7 @@ import { Box } from '@mui/material';
 // layouts
 import MainLayout from '../layouts/main';
 // sections
-import {
-  HomeHero,
-  HomeMinimal,
-  HomeLookingFor,
-  HomeAdvertisement,
-  Pricing,
-} from '../sections/home';
+import { HomeHero, HomeMinimal, HomeLookingFor, HomeAdvertisement } from '../sections/home';
 
 import { About, AboutTestimonials } from '../sections/about';
 import CaseforHome from 'src/sections/case/CaseforHome';

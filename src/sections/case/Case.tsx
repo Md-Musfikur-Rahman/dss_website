@@ -1,6 +1,6 @@
 import { Container, Stack, Typography } from '@mui/material';
 import { m } from 'framer-motion';
-import { MotionViewport, varFade } from 'src/components/animate';
+import { MotionViewport } from 'src/components/animate';
 import { ImageDescription } from '.';
 
 export default function Case() {

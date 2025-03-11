@@ -5,7 +5,7 @@ import { Button, Container, Typography } from '@mui/material';
 // components
 import Iconify from '../../components/iconify';
 import { MotionViewport, varFade } from '../../components/animate';
-import { TeamMember, Founders } from '.';
+import { TeamMember } from '.';
 import { PATH_PAGE } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------

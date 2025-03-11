@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import MainLayout from '../layouts/main';
+
 import { Container } from '@mui/material';
-import dynamic from 'next/dynamic';
+
 import { m } from 'framer-motion';
 import {
   Header,
