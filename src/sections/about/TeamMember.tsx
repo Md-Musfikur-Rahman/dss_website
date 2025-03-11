@@ -6,6 +6,7 @@ import { varFade } from 'src/components/animate';
 import Carousel, { CarouselArrows } from 'src/components/carousel';
 import { useRef } from 'react';
 import { useTheme } from '@mui/material/styles';
+import Link from 'next/link';
 
 export default function TeamMember() {
   const carouselRef = useRef<Carousel>(null);
@@ -83,17 +84,19 @@ export default function TeamMember() {
 
                 <Stack direction="row" alignItems="center" justifyContent="center" sx={{ p: 2 }}>
                   {member._socials.map((social) => (
-                    <IconButton
-                      key={social.name}
-                      sx={{
-                        color: social.color,
-                        '&:hover': {
-                          bgcolor: alpha(social.color, 0.08),
-                        },
-                      }}
-                    >
-                      <Iconify icon={social.icon} />
-                    </IconButton>
+                    <Link href={social.path} target="_blank">
+                      <IconButton
+                        key={social.name}
+                        sx={{
+                          color: social.color,
+                          '&:hover': {
+                            bgcolor: alpha(social.color, 0.08),
+                          },
+                        }}
+                      >
+                        <Iconify icon={social.icon} />
+                      </IconButton>
+                    </Link>
                   ))}
                 </Stack>
               </Card>
@@ -108,26 +111,26 @@ export default function TeamMember() {
 //----------------------------------------------------------
 
 const _carouselsMembers = [
-  // Shakil
+  // Musfikur
   {
-    id: '003',
-    name: 'Shakidul Islam Shakil',
+    id: '001',
+    name: 'Md Musfikur Rahman',
     role: 'Full Stack Developer',
-    avatar: `/assets/images/portraits/shakil.jpeg`,
+    avatar: `/assets/images/portraits/Musfikur.jpg`,
     _socials: [
       {
         value: 'facebook',
         name: 'FaceBook',
         icon: 'eva:facebook-fill',
         color: '#1877F2',
-        path: 'https://www.facebook.com/mdmusfikurrahman23',
+        path: 'https://www.facebook.com/musfikurrahmanwp',
       },
       {
         value: 'instagram',
         name: 'Instagram',
         icon: 'ant-design:instagram-filled',
         color: '#E02D69',
-        path: 'https://www.instagram.com/mdmusfikurrahman23',
+        path: 'https://www.instagram.com/musfikurrahmanwp',
       },
       {
         value: 'linkedin',
@@ -141,7 +144,83 @@ const _carouselsMembers = [
         name: 'Twitter',
         icon: 'eva:twitter-fill',
         color: '#00AAEC',
-        path: 'https://www.twitter.com/devsitestudio',
+        path: 'https://www.twitter.com/wropseo',
+      },
+    ],
+  },
+
+  // Pranto
+  {
+    id: '002',
+    name: 'Pranto Saha',
+    role: 'Grapich Designer',
+    avatar: `/assets/images/portraits/pranto.webp`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://dribbble.com/prantommj',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/',
+      },
+    ],
+  },
+
+  // Asad
+  {
+    id: '003',
+    name: 'Md Assaduzzaman',
+    role: 'Front-end Engineer',
+    avatar: `/assets/images/portraits/asad.png`,
+    _socials: [
+      {
+        value: 'facebook',
+        name: 'FaceBook',
+        icon: 'eva:facebook-fill',
+        color: '#1877F2',
+        path: 'https://facebook.com/',
+      },
+      {
+        value: 'instagram',
+        name: 'Instagram',
+        icon: 'ant-design:instagram-filled',
+        color: '#E02D69',
+        path: 'https://www.instagram.com/',
+      },
+      {
+        value: 'linkedin',
+        name: 'Linkedin',
+        icon: 'eva:linkedin-fill',
+        color: '#007EBB',
+        path: 'https://www.linkedin.com/in/',
+      },
+      {
+        value: 'twitter',
+        name: 'Twitter',
+        icon: 'eva:twitter-fill',
+        color: '#00AAEC',
+        path: 'https://www.twitter.com/',
       },
     ],
   },

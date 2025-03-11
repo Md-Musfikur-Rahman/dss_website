@@ -13,7 +13,7 @@ import { PATH_PAGE } from 'src/routes/paths';
 export default function AboutTeam() {
   return (
     <Container component={MotionViewport} sx={{ mt: 10, textAlign: 'center' }}>
-      {/* Founders */}
+      {/* Founders 
       <m.div variants={varFade().inUp}>
         <Typography variant="h1" sx={{ my: 3 }}>
           Meet the Leaders
@@ -22,7 +22,8 @@ export default function AboutTeam() {
           Driving Success Through Collaboration
         </Typography>
       </m.div>
-      <Founders />
+
+      <Founders />*/}
 
       <m.div variants={varFade().inDown}>
         <Typography component="p" variant="overline" sx={{ color: 'text.disabled', mt: 10 }}>
