@@ -49,7 +49,7 @@ export default function AboutWhat() {
                   <m.div variants={varFade().inUp}>
                     <Image
                       alt="wordpress"
-                      src="/assets/images/about/what_1.jpg"
+                      src="/assets/images/about/5741168.jpg"
                       ratio="3/4"
                       sx={{
                         borderRadius: 2,
@@ -63,7 +63,7 @@ export default function AboutWhat() {
                   <m.div variants={varFade().inUp}>
                     <Image
                       alt="wordpress plugins"
-                      src="/assets/images/about/what_2.jpg"
+                      src="/assets/images/about/05.jpg"
                       ratio="1/1"
                       sx={{ borderRadius: 2 }}
                     />
@@ -85,7 +85,7 @@ export default function AboutWhat() {
                   <m.div variants={varFade().inUp}>
                     <Image
                       alt="wordpress"
-                      src="/assets/images/about/what_4.jpg"
+                      src="/assets/images/about/person-front-computer-working-html.jpg"
                       ratio="3/4"
                       sx={{
                         borderRadius: 2,
